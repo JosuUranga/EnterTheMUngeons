@@ -35,13 +35,6 @@ void movement(void) {
 			case SDL_SCANCODE_RIGHT:
 				if (levelmanagerstruct.playing)posstruct.right = 1;
 				break;
-			case SDL_SCANCODE_ESCAPE:
-				levelmanagerstruct.playing = 0;
-				posstruct.right = 0;
-				posstruct.left = 0;
-				posstruct.down = 0;
-				posstruct.up = 0;
-				break;
 			}
 			break;
 		case SDL_KEYUP:
@@ -68,9 +61,6 @@ void movement(void) {
 			case SDL_SCANCODE_D:
 			case SDL_SCANCODE_RIGHT:
 				if (levelmanagerstruct.playing)posstruct.right = 0;
-				break;
-			case SDL_SCANCODE_ESCAPE:
-
 				break;
 			}
 			break;

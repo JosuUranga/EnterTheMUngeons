@@ -2,7 +2,7 @@
 #include "Functions.h"
 
 void lavaBoss(void) {
-	boss.bossRect[0].x += boss.bossVelX[0];
+	boss.bossRect[0].x += (int)boss.bossVelX[0];
 
 	if (boss.bossRect[0].x > 500) {
 		boss.bossVelX[0] *= -1;
@@ -52,7 +52,7 @@ void lavaAtakeakSortu(void) {
 
 		}
 	}
-		lavaAtakeakMugitu(TakeRenderer(), playerRect.player, playerRect.Bala);
+		lavaAtakeakMugitu();
 }
 void lavaAtakeakMugitu(void) {
 	if (lava.counter[0] <= LAVATTL && lava.counter[1] <= LAVATTL) {
@@ -61,7 +61,7 @@ void lavaAtakeakMugitu(void) {
 	}
 
 	if (lava.lavaHasBeenCreated[0] == 1) {
-		lava.lavaRect[0].y += lava.lavaVelY[0];
+		lava.lavaRect[0].y += (int)lava.lavaVelY[0];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(lava.lavaRect[0], playerRect.player)) {
 				lava.lavaHasBeenCreated[0] = 0;
@@ -75,7 +75,7 @@ void lavaAtakeakMugitu(void) {
 		lava.counter[0] = 0;
 	}
 	if (lava.lavaHasBeenCreated[1] == 1) {
-		lava.lavaRect[1].y += lava.lavaVelY[1];
+		lava.lavaRect[1].y += (int)lava.lavaVelY[1];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(lava.lavaRect[1], playerRect.player)) {
 				lava.lavaHasBeenCreated[1] = 0;
@@ -93,7 +93,7 @@ void lavaAtakeakMugitu(void) {
 	}
 	if (collisioncheck(playerRect.Bala, boss.bossRect[0])) {
 		boss.healthPoints[0] -=1;
-		boss.health[0] -= 5.1;
+		boss.health[0] -= (float)5.1;
 		//printf("%d\n", boss.healthPoints[0]);
 		if (boss.healthPoints[0] == 0) {
 			lifestruct.lifes = 3;

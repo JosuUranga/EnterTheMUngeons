@@ -29,7 +29,7 @@ void SpawnEnemy (void)
 	}
 	//enemySpawn.hasSpawned[levelmanagerstruct.level] = 0;
 	// Enemy creation
-	srand(time(0));
+	srand((unsigned int)time(0));
 	if ((EnemyV->stopenemycreation) == 3) {
 		for (int i = 0; i <= MAXENEMY; i++)
 		{
@@ -82,7 +82,7 @@ void MoveEnemy(SDL_Rect* Enemy, SDL_Rect* borde, EnemyVe* EnemyV) {
 	Enemy->x += (*EnemyV).v_x;
 	Enemy->y += (*EnemyV).v_y;
 }
-void BulletCreation(SDL_Rect* dest, SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet) {
+void BulletCreation(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet) {
 	float distance;
 	if ((*EnemyV).BulletCreated == 0 && (*EnemyV).CanCreateB == 0) {
 		(*Bullet).h = 10;
@@ -90,35 +90,35 @@ void BulletCreation(SDL_Rect* dest, SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* 
 		(*Bullet).x = (*Enemy).x + ((*Enemy).w / 2);
 		(*Bullet).y = (*Enemy).y + ((*Enemy).h / 2);
 		(*EnemyV).BulletCreated = 1;
-		(*EnemyV).BulletDelta_x = ((*dest).x + ((*dest).w / 2)) - (*Bullet).x;
-		(*EnemyV).BulletDelta_y = ((*dest).y + ((*dest).h / 2)) - (*Bullet).y;
-		distance = sqrt((*EnemyV).BulletDelta_x*(*EnemyV).BulletDelta_x + (*EnemyV).BulletDelta_y*(*EnemyV).BulletDelta_y);
+		(*EnemyV).BulletDelta_x = (float)(playerRect.player.x + (playerRect.player.w / 2)) - (*Bullet).x;
+		(*EnemyV).BulletDelta_y = (float)(playerRect.player.y + (playerRect.player.h / 2)) - (*Bullet).y;
+		distance = (float)sqrt((*EnemyV).BulletDelta_x*(*EnemyV).BulletDelta_x + (*EnemyV).BulletDelta_y*(*EnemyV).BulletDelta_y);
 		(*EnemyV).BulletVel_x = ((*EnemyV).BulletDelta_x*(SPEED)) / distance;
 		(*EnemyV).BulletVel_y = ((*EnemyV).BulletDelta_y*(SPEED)) / distance;
-		(*EnemyV).BulletPos_x = (*Bullet).x;
-		(*EnemyV).BulletPos_y = (*Bullet).y;
+		(*EnemyV).BulletPos_x = (float)(*Bullet).x;
+		(*EnemyV).BulletPos_y = (float)(*Bullet).y;
 		(*EnemyV).FPSCounter = 0;
 	}
 }
-void MoveEnemyBullet(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet, SDL_Rect* borde, SDL_Rect* dest) {
+void MoveEnemyBullet(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet) {
 	if ((*EnemyV).BulletCreated == 1 && (*EnemyV).CanCreateB == 0) 
 		{
 		(*EnemyV).BulletPos_x += (*EnemyV).BulletVel_x / 60;
 		(*EnemyV).BulletPos_y += (*EnemyV).BulletVel_y / 60;
 		(*Bullet).x = (int)(*EnemyV).BulletPos_x;
 		(*Bullet).y = (int)(*EnemyV).BulletPos_y;
-		if ((collisioncheck((*Bullet), (*dest))) == 1) (*EnemyV).BulletCreated = 0;
+		if ((collisioncheck((*Bullet), (playerRect.player))) == 1) (*EnemyV).BulletCreated = 0;
 		if ((*EnemyV).FPSCounter == BulletTTL) (*EnemyV).BulletCreated = 0;
 	}
 }
 
-void Enemydead(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet) {
+void Enemydead(void) {
 	for (int i = 0; i <= MAXENEMY; i++)
 	{
 
 		if (EnemyV[i].HP == 0) {
-			Enemy[i].h = 0;
-			Enemy[i].w = 0;
+			enemySpawn.Enemy[i].h = 0;
+			enemySpawn.Enemy[i].w = 0;
 			EnemyV[i].CanCreateB = 1;
 			if ((levelmanagerstruct.level == 1 || levelmanagerstruct.level == 5) && EnemyV[i].deeadSound == 0) {
 				playSound(7);
@@ -142,8 +142,8 @@ void Enemydead(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet) {
 
 		}
 		if ((EnemyV[i]).CanCreateB == 1) {
-			(Bullet[i]).h = 0;
-			(Bullet[i]).w = 0;
+			(enemySpawn.Bullet[i]).h = 0;
+			(enemySpawn.Bullet[i]).w = 0;
 		}
 	}
 
@@ -167,16 +167,16 @@ void EnemyTexture(void) {
 
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.EBullet_surface);
-				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.enemy_surface);
+				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.EBullet_surface);
+				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.enemy_surface);
 			}
 			enemySpawn.hasSkinChanged = 1;
 		}
 		if (enemySpawn.enemyController[levelmanagerstruct.level]) {
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
 			}
 			enemySpawn.hasSkinChanged = 1;
 			
@@ -189,16 +189,16 @@ void EnemyTexture(void) {
 
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.EBullet_surface);
-				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.enemy_surface);
+				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.EBullet_surface);
+				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.enemy_surface);
 			}
 			enemySpawn.hasSkinChanged = 1;
 		}
 		if (enemySpawn.enemyController[levelmanagerstruct.level]) {
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
 			}
 		}
 	}
@@ -209,16 +209,16 @@ void EnemyTexture(void) {
 
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.EBullet_surface);
-				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.enemy_surface);
+				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.EBullet_surface);
+				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.enemy_surface);
 			}
 			enemySpawn.hasSkinChanged = 1;
 		}
 		if (enemySpawn.enemyController[levelmanagerstruct.level]) {
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
 			}
 		}
 	}
@@ -229,16 +229,16 @@ void EnemyTexture(void) {
 
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.EBullet_surface);
-				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(TakeRenderer(), charactersstruct.enemy_surface);
+				charactersstruct.EBulletTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.EBullet_surface);
+				charactersstruct.EnemyTex[i] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, charactersstruct.enemy_surface);
 			}
 			enemySpawn.hasSkinChanged = 1;
 		}
 		if (enemySpawn.enemyController[levelmanagerstruct.level]) {
 			for (int i = 0; i <= MAXENEMY; i++)
 			{
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
-				SDL_RenderCopy(TakeRenderer(), charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EnemyTex[i], NULL, &enemySpawn.Enemy[i]);
+				SDL_RenderCopy(levelmanagerstruct.rend, charactersstruct.EBulletTex[i], NULL, &enemySpawn.Bullet[i]);
 			}
 		}
 	}

@@ -4,8 +4,8 @@ void InitStruct(void) {
 
 	levelmanagerstruct.level = 0;
 	lifestruct.lifes = PROTAHP;
-	ProtaB[0].aBulletCreated = 0;
-	ProtaB[0].aFPSCounter = 0;
+	ProtaB.aBulletCreated = 0;
+	ProtaB.aFPSCounter = 0;
 	EnemyV->stopenemycreation = 0;
 	enemySpawn.hasSkinChanged = 0;
 	enemySpawn.bulletFCreated = 0;
@@ -18,7 +18,7 @@ void InitStruct(void) {
 	bossFinalCreation();
 	boss.bossesKilled = 0;
 	lifestruct.score = 0;
-	ProtaB->aBulletTTL = 10;
+	ProtaB.aBulletTTL = 10;
 	lifestruct.dieFPS = 0;
 	lifestruct.restartFPS = 0;
 	final.fase3 = 0;
@@ -31,6 +31,7 @@ void InitStruct(void) {
 	lifestruct.GameOver = 0;
 	lifestruct.constantFPScounter = 0;
 	winOrDie.goMusic = 0;
+	lifestruct.tempScore = 0;
 
 
 	weaponStruct.shotgunTex = 1;
@@ -63,8 +64,8 @@ void InitStruct(void) {
 		enemySpawn.enemyL[i] = 1;
 	}
 	// start sprite in center of screen
-	posstruct.x = (WINDOW_WIDTH - playerRect.player.w) / 2;
-	posstruct.y = (WINDOW_HEIGHT - playerRect.player.h) / 2;
+	posstruct.x = (float)(WINDOW_WIDTH - playerRect.player.w) / 2;
+	posstruct.y = (float)(WINDOW_HEIGHT - playerRect.player.h) / 2;
 	posstruct.x_vel = 0;
 	posstruct.y_vel = 0;
 

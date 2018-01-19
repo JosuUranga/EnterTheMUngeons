@@ -4,16 +4,16 @@ void GameOver(void) {
 	switch (levelmanagerstruct.hizkuntza)
 	{
 	case (1):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[3], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[3], NULL, NULL);
 		break;
 	case(2):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[4], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[4], NULL, NULL);
 		break;
 	case(3):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[5], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[5], NULL, NULL);
 		break;
 	default:
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[3], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[3], NULL, NULL);
 		break;
 	}
 	if (lifestruct.dieFPS < 120)lifestruct.dieFPS += 1;
@@ -55,7 +55,7 @@ int WinDieBotoiak(void) {
 			return 2;
 
 		}
-		else return 0;
+		
 	}
-
+	return 0;
 }

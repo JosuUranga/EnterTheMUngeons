@@ -49,12 +49,12 @@ void windowCollision(SDL_Rect dest) {
 	if (posstruct.x <= 0) posstruct.x = 0;
 	if (posstruct.y <= 0) posstruct.y = 0;
 
-	if (posstruct.x >= WINDOW_WIDTH - dest.w) posstruct.x = WINDOW_WIDTH - dest.w;
-	if (posstruct.y >= WINDOW_HEIGHT - dest.h) posstruct.y = WINDOW_HEIGHT - dest.h;
+	if (posstruct.x >= WINDOW_WIDTH - dest.w) posstruct.x = (float)WINDOW_WIDTH - dest.w;
+	if (posstruct.y >= WINDOW_HEIGHT - dest.h) posstruct.y = (float)WINDOW_HEIGHT - dest.h;
 
 	// set the positions in the struct
-	dest.y = posstruct.y;
-	dest.x = posstruct.x;
+	dest.y = (int)posstruct.y;
+	dest.x = (int)posstruct.x;
 }
 
 
@@ -70,10 +70,10 @@ void wallCollision(SDL_Rect dest, SDL_Rect* borde) {
 		
 	}
 
-	if (checkCollision(dest, borde[0])) posstruct.x = posstruct.xtemp + 0.2;
-	if (checkCollision(dest, borde[1])) posstruct.y = posstruct.ytemp + 0.2;
-	if (checkCollision(dest, borde[2])) posstruct.x = posstruct.xtemp - 0.2;
-	if (checkCollision(dest, borde[3])) posstruct.y = posstruct.ytemp - 0.2;
+	if (checkCollision(dest, borde[0])) posstruct.x = (float)(posstruct.xtemp + 0.2);
+	if (checkCollision(dest, borde[1])) posstruct.y = (float)(posstruct.ytemp + 0.2);
+	if (checkCollision(dest, borde[2])) posstruct.x = (float)(posstruct.xtemp - 0.2);
+	if (checkCollision(dest, borde[3])) posstruct.y = (float)(posstruct.ytemp - 0.2);
 
 	posstruct.xtemp = posstruct.x;
 	posstruct.ytemp = posstruct.y;

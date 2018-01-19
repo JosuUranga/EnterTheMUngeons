@@ -23,7 +23,7 @@ void menu() {
 	mt.dest[1].x = (int)mt.x2;
 
 	// clear the window
-	SDL_RenderClear(TakeRenderer());
+	SDL_RenderClear(levelmanagerstruct.rend);
 
 	// draw the image to the window
 	switch (menua) {
@@ -31,16 +31,16 @@ void menu() {
 		switch (levelmanagerstruct.hizkuntza)
 		{
 		case (1):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[0], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[0], NULL, NULL);
 			break;
 		case(2):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[4], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[4], NULL, NULL);
 			break;
 		case(3):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[5], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[5], NULL, NULL);
 			break;
 		default:
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[0], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[0], NULL, NULL);
 			break;
 		}
 		
@@ -50,16 +50,16 @@ void menu() {
 		switch (levelmanagerstruct.hizkuntza)
 		{
 		case (1):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[3], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[3], NULL, NULL);
 			break;
 		case(2):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[6], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[6], NULL, NULL);
 			break;
 		case(3):
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[7], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[7], NULL, NULL);
 			break;
 		default:
-			SDL_RenderCopy(TakeRenderer(), mt.texturak[3], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[3], NULL, NULL);
 			break;
 		}
 		
@@ -67,8 +67,8 @@ void menu() {
 		break;
 	}
 
-	SDL_RenderCopy(TakeRenderer(), mt.texturak[1], NULL, &mt.dest[0]);
-	SDL_RenderCopy(TakeRenderer(), mt.texturak[2], NULL, &mt.dest[1]);
+	SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[1], NULL, &mt.dest[0]);
+	SDL_RenderCopy(levelmanagerstruct.rend, mt.texturak[2], NULL, &mt.dest[1]);
 }
 
 int botoiak() {
@@ -106,7 +106,7 @@ void kreditu() {
 		}
 	}
 }
-void menuSprites() {
+void menuSprites(void) {
 	// get and scale the dimensions of texture (menu enemy)
 	SDL_QueryTexture(mt.texturak[1], NULL, NULL, &mt.dest[0].w, &mt.dest[0].h);
 	mt.dest[0].w = 20;
@@ -117,10 +117,10 @@ void menuSprites() {
 
 	// start menu in center of screen    
 	mt.x1 = (WINDOW_WIDTH - 100);
-	mt.y1 = (WINDOW_HEIGHT / 2 - mt.dest[0].h - 20);
+	mt.y1 = (float)(WINDOW_HEIGHT / 2 - mt.dest[0].h - 20);
 	mt.y1_vel = (SPEED);
 	mt.x2 = (80);
-	mt.y2 = (WINDOW_HEIGHT / 2 - mt.dest[1].h - 20);
+	mt.y2 = (float)(WINDOW_HEIGHT / 2 - mt.dest[1].h - 20);
 	mt.y2_vel = (SPEED);
 }
 

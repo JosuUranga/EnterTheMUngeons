@@ -4,16 +4,16 @@ void YouWin(void) {
 	switch (levelmanagerstruct.hizkuntza)
 	{
 	case (1):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[0], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[0], NULL, NULL);
 		break;
 	case(2):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[1], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[1], NULL, NULL);
 		break;
 	case(3):
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[2], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[2], NULL, NULL);
 		break;
 	default:
-		SDL_RenderCopy(TakeRenderer(), winOrDie.texture[0], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, winOrDie.texture[0], NULL, NULL);
 		break;
 	}
 	

@@ -16,8 +16,8 @@ void bossNieveCreation() {
 
 void nieveBoss() {
 	
-	boss.bossRect[2].x += boss.bossVelX[2];
-	boss.bossRect[2].y += boss.bossVelY[2];
+	boss.bossRect[2].x += (int)boss.bossVelX[2];
+	boss.bossRect[2].y += (int)boss.bossVelY[2];
 	
 	if (boss.bossRect[2].y > WINDOW_HEIGHT - 50 - boss.bossRect[2].h) {
 		boss.bossRect[2].y = WINDOW_HEIGHT - 50 - boss.bossRect[2].h;
@@ -51,9 +51,9 @@ void nieveAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			nieve.nieveVelY[0] = ATAQUEVEL - 4;
 			nieve.nieveVelX[0] = ATAQUEVEL - 4;
 			nieve.nieveHasBeenCreated[0] = 1;
-			nieve.deltax[0] = ((player).x + (player.w / 2)) - (boss.bossRect[2].x + boss.bossRect[2].w / 2);
-			nieve.deltay[0] = ((player).y + (player.h / 2)) - (boss.bossRect[2].y + boss.bossRect[2].h / 2);
-			nieve.distance[0] = sqrt(nieve.deltax[0] *nieve.deltax[0] + nieve.deltay[0] * nieve.deltay[0]);
+			nieve.deltax[0] = (float)((player).x + (player.w / 2)) - (boss.bossRect[2].x + boss.bossRect[2].w / 2);
+			nieve.deltay[0] = (float)((player).y + (player.h / 2)) - (boss.bossRect[2].y + boss.bossRect[2].h / 2);
+			nieve.distance[0] = (float)sqrt(nieve.deltax[0] *nieve.deltax[0] + nieve.deltay[0] * nieve.deltay[0]);
 		}
 		if (nieve.nieveHasBeenCreated[1] == 0 && nieve.counter[1] == 0) {
 			nieve.nieveRect[1].h = 26;
@@ -63,9 +63,9 @@ void nieveAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			nieve.nieveVelY[1] = ATAQUEVEL - 4;
 			nieve.nieveVelX[1] = ATAQUEVEL - 4;
 			nieve.nieveHasBeenCreated[1] = 1;
-			nieve.deltax[1] = ((player).x + (player.w / 2)) - (boss.bossRect[2].x + boss.bossRect[2].w / 2);
-			nieve.deltay[1] = ((player).y + (player.h / 2)) - (boss.bossRect[2].y + boss.bossRect[2].h / 2);
-			nieve.distance[1] = sqrt(nieve.deltax[1] *nieve.deltax[1] + nieve.deltay[1] * nieve.deltay[1]);
+			nieve.deltax[1] = (float)((player).x + (player.w / 2)) - (boss.bossRect[2].x + boss.bossRect[2].w / 2);
+			nieve.deltay[1] = (float)((player).y + (player.h / 2)) - (boss.bossRect[2].y + boss.bossRect[2].h / 2);
+			nieve.distance[1] = (float)sqrt(nieve.deltax[1] *nieve.deltax[1] + nieve.deltay[1] * nieve.deltay[1]);
 		}
 	}
 	nieveAtakeakMugitu(player, bala);
@@ -85,8 +85,8 @@ void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	if (nieve.nieveHasBeenCreated[0] == 1) {
 		nieve.nieveVelX[0] = (nieve.deltax[0] *(ATAQUEVEL)) / nieve.distance[0];
 		nieve.nieveVelY[0] = (nieve.deltay[0] *(ATAQUEVEL)) / nieve.distance[0];
-		nieve.nieveRect[0].y += nieve.nieveVelY[0];
-		nieve.nieveRect[0].x += nieve.nieveVelX[0];
+		nieve.nieveRect[0].y += (int)nieve.nieveVelY[0];
+		nieve.nieveRect[0].x += (int)nieve.nieveVelX[0];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(nieve.nieveRect[0], dest)) {
 				nieve.nieveHasBeenCreated[0] = 0;
@@ -101,8 +101,8 @@ void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	if (nieve.nieveHasBeenCreated[1] == 1) {
 		nieve.nieveVelX[1] = (nieve.deltax[1] *(ATAQUEVEL)) / nieve.distance[1];
 		nieve.nieveVelY[1] = (nieve.deltay[1] *(ATAQUEVEL)) / nieve.distance[1];
-		nieve.nieveRect[1].y += nieve.nieveVelY[1];
-		nieve.nieveRect[1].x += nieve.nieveVelX[1];
+		nieve.nieveRect[1].y += (int)nieve.nieveVelY[1];
+		nieve.nieveRect[1].x += (int)nieve.nieveVelX[1];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(nieve.nieveRect[1], dest)) {
 				nieve.nieveHasBeenCreated[1] = 0;
@@ -119,7 +119,7 @@ void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	}
 	if (collisioncheck(bala, boss.bossRect[2])) {
 		boss.healthPoints[2] -= 1;
-		boss.health[2] -= 5.1;
+		boss.health[2] -= (float)5.1;
 		if (boss.healthPoints[2] == 0) {
 			lifestruct.lifes = 3;
 			boss.bossesKilled += 1;

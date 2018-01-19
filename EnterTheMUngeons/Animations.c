@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 void LevelLavaAnim(void) {
-		SDL_RenderCopy(TakeRenderer(), levelAnim.lavaTexture[levelmanagerstruct.level], NULL, NULL);
+		SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.lavaTexture[levelmanagerstruct.level], NULL, NULL);
 		SDL_SetTextureAlphaMod(levelAnim.lavaTexture[levelmanagerstruct.level], levelAnim.fade);
 
 		if (levelAnim.fadeCounter == 3)levelAnim.fadeCounter = 1;
@@ -30,43 +30,43 @@ void LevelSnowAnim(void) {
 		switch (levelAnim.snowAnim)
 		{
 		case (int)1:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[0], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[0], NULL, NULL);
 			//printf("Estoy en 1\n");
 			break;
 		case (int)2:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[1], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[1], NULL, NULL);
 			//printf("Estoy en 2\n");
 			break;
 		case(int)3:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[2], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[2], NULL, NULL);
 			//printf("Estoy en 3\n");
 			break;
 		case(int)4:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[3], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[3], NULL, NULL);
 			//printf("Estoy en 4\n");
 			break;
 		case(int)5:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[4], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[4], NULL, NULL);
 			//printf("Estoy en 5\n");
 			break;
 		case (int)6:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[5], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[5], NULL, NULL);
 			//printf("Estoy en 6\n");
 			break;
 		case (int)7:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[6], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[6], NULL, NULL);
 			//printf("Estoy en 7\n");
 			break;
 		case(int)8:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[7], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[7], NULL, NULL);
 			//printf("Estoy en 8\n");
 			break;
 		case(int)9:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[8], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[8], NULL, NULL);
 			//printf("Estoy en 9\n");
 			break;
 		case(int)10:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.snowTexture[9], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.snowTexture[9], NULL, NULL);
 			//printf("Estoy en 10\n");
 			break;
 		default:
@@ -84,15 +84,15 @@ void levelDefaultAnim(void) {
 		switch (levelAnim.defaultAnim)
 		{
 		case (int)1:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[0], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[0], NULL, NULL);
 			//printf("Estoy en 1\n");
 			break;
 		case (int)2:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[1], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[1], NULL, NULL);
 			//printf("Estoy en 2\n");
 			break;
 		case(int)3:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[2], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[2], NULL, NULL);
 			//printf("Estoy en 3\n");
 			break;
 		default:
@@ -103,15 +103,15 @@ void levelDefaultAnim(void) {
 		switch (levelAnim.defaultAnim)
 		{
 		case (int)1:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[3], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[3], NULL, NULL);
 			//printf("Estoy en 1\n");
 			break;
 		case (int)2:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[4], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[4], NULL, NULL);
 			//printf("Estoy en 2\n");
 			break;
 		case(int)3:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[5], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[5], NULL, NULL);
 			//printf("Estoy en 3\n");
 			break;
 		default:
@@ -123,15 +123,15 @@ void levelDefaultAnim(void) {
 		switch (levelAnim.defaultAnim)
 		{
 		case (int)1:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[6], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[6], NULL, NULL);
 			//printf("Estoy en 1\n");
 			break;
 		case (int)2:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[7], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[7], NULL, NULL);
 			//printf("Estoy en 2\n");
 			break;
 		case(int)3:
-			SDL_RenderCopy(TakeRenderer(), levelAnim.defaultTexture[8], NULL, NULL);
+			SDL_RenderCopy(levelmanagerstruct.rend, levelAnim.defaultTexture[8], NULL, NULL);
 			//printf("Estoy en 3\n");
 			break;
 		default:

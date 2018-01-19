@@ -12,6 +12,7 @@
 #include <SDL_timer.h>
 #include <SDL_mixer.h>
 #include <SDL_ttf.h>
+#include <time.h>
 #define WINDOW_WIDTH (640)
 #define WINDOW_HEIGHT (480)
 #define SPEED (250)
@@ -50,6 +51,7 @@ typedef struct {
 	int invencivilty;
 	int invencivilityFPS;
 	int score;
+	int tempScore;
 	char str[30];
 	char str2[30];
 	char str3[30];
@@ -63,10 +65,12 @@ typedef struct {
 	int dieFPS;
 	int restartFPS;
 	int GameOver;
+	SDL_Rect lifeRect;
 }lifeStruct;
 lifeStruct lifestruct;
 
 typedef struct{
+	SDL_Renderer* rend;
 	SDL_Rect borde[MAXRECTS + 1];
 	int level;
 	int close_requested;
@@ -151,7 +155,7 @@ typedef struct {
 	int aBulletTTL;
 
 }ProtaBullet;
-ProtaBullet ProtaB[1];
+ProtaBullet ProtaB;
 
 typedef struct {
 	int enemyL[11];
@@ -229,21 +233,20 @@ void InitSurfacesAndTextures(void);
 void InitRect(void);
 void InitStruct(void);
 void Enemydeadcounter(void);
-void Enemydead(SDL_Rect* Enemy,struct EnemyVe* EnemyV, SDL_Rect* Bullet);
+void Enemydead(void);
 void SpawnEnemy(void);
 int collisioncheck(struct SDL_Rect dest, struct SDL_Rect borde1);
-void AllyBulletCreation(SDL_Rect* dest, SDL_Rect* Bala, ProtaBullet* ProtaB);
-void MoveAllyBullet(SDL_Rect* Bala, ProtaBullet* ProtaB, SDL_Rect* Enemy);
+void AllyBulletCreation(SDL_Rect* dest, SDL_Rect* Bala);
+void MoveAllyBullet(SDL_Rect* Bala, SDL_Rect* Enemy);
 void MoveEnemy(SDL_Rect* Enemy, SDL_Rect* borde, EnemyVe* EnemyV);
-void BulletCreation(SDL_Rect* dest, SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet);
-void MoveEnemyBullet(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet, SDL_Rect* borde, SDL_Rect* dest);
+void BulletCreation(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet);
+void MoveEnemyBullet(SDL_Rect* Enemy, EnemyVe* EnemyV, SDL_Rect* Bullet);
 void CreateEnemy(SDL_Rect* Enemy);
 int collisioncheck(struct SDL_Rect dest, struct SDL_Rect borde1);
 void wallCollision(SDL_Rect dest, SDL_Rect* borde);
 void menu();
 void movement(void);
-int main(int argc, char *argv[]);
-void life(SDL_Rect player, SDL_Rect* bullet);
+void life(void);
 int checkCollision(SDL_Rect A, SDL_Rect B);
 void windowCollision(SDL_Rect dest);
 int doors(void);
@@ -262,10 +265,11 @@ void resetBullet();
 void hizkuntza(void);
 void showWeapon(void);
 void levelmanagerstructdoors(int a, int b, int c, int d);
-void ValorRects(SDL_Rect* a, int b, int c, int d, int e);
+void ValorRects(SDL_Rect* a,int b, int c, int d, int e);
 void levelmanagerstructcaseprincipal(int a, int b, int c);
 void levelmanagerstructcasenormal(int a, int b, int c);
 void levelmanagerstructcasevolverprincipal(int b, int c, int a);
-
+void weaponSelector(void);
+void menuSprites(void);
 
 #endif

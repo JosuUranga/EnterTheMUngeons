@@ -25,9 +25,9 @@ void arbolAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			arbol.arbolVelY[0] = ATAQUEVEL - 4;
 			arbol.arbolVelX[0] = ATAQUEVEL - 4;
 			arbol.arbolHasBeenCreated[0] = 1;
-			arbol.deltax = ((player).x + (player.w / 2)) - (boss.bossRect[3].x + boss.bossRect[3].w / 2);
-			arbol.deltay = ((player).y + (player.h / 2)) - (boss.bossRect[3].y + boss.bossRect[3].h / 2);
-			arbol.distance = sqrt(arbol.deltax*arbol.deltax + arbol.deltay * arbol.deltay);
+			arbol.deltax = (float)((player).x + (player.w / 2)) - (boss.bossRect[3].x + boss.bossRect[3].w / 2);
+			arbol.deltay = (float)((player).y + (player.h / 2)) - (boss.bossRect[3].y + boss.bossRect[3].h / 2);
+			arbol.distance = (float)sqrt(arbol.deltax*arbol.deltax + arbol.deltay * arbol.deltay);
 		}
 		if (arbol.arbolHasBeenCreated[1] == 0 && arbol.counter[1] == 0) {
 			arbol.arbolRect[1].h = 26;
@@ -37,9 +37,9 @@ void arbolAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			arbol.arbolVelY[1] = ATAQUEVEL - 4;
 			arbol.arbolVelX[1] = ATAQUEVEL - 4;
 			arbol.arbolHasBeenCreated[1] = 1;
-			arbol.deltax = ((player).x + (player.w / 2)) - (boss.bossRect[3].x + boss.bossRect[3].w / 2);
-			arbol.deltay = ((player).y + (player.h / 2)) - (boss.bossRect[3].y + boss.bossRect[3].h / 2);
-			arbol.distance = sqrt(arbol.deltax*arbol.deltax + arbol.deltay * arbol.deltay);
+			arbol.deltax = (float)((player).x + (player.w / 2)) - (boss.bossRect[3].x + boss.bossRect[3].w / 2);
+			arbol.deltay = (float)((player).y + (player.h / 2)) - (boss.bossRect[3].y + boss.bossRect[3].h / 2);
+			arbol.distance = (float)sqrt(arbol.deltax*arbol.deltax + arbol.deltay * arbol.deltay);
 		}
 	}
 	arbolAtakeakMugitu(player, bala);
@@ -59,8 +59,8 @@ void arbolAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	if (arbol.arbolHasBeenCreated[0] == 1) {
 		arbol.arbolVelX[0] = (arbol.deltax*(ATAQUEVEL)) / arbol.distance;
 		arbol.arbolVelY[0] = (arbol.deltay*(ATAQUEVEL)) / arbol.distance;
-		arbol.arbolRect[0].y += arbol.arbolVelY[0];
-		arbol.arbolRect[0].x += arbol.arbolVelX[0];
+		arbol.arbolRect[0].y += (int)arbol.arbolVelY[0];
+		arbol.arbolRect[0].x += (int)arbol.arbolVelX[0];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(arbol.arbolRect[0], dest)) {
 				arbol.arbolHasBeenCreated[0] = 0;
@@ -76,8 +76,8 @@ void arbolAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	if (arbol.arbolHasBeenCreated[1] == 1) {
 		arbol.arbolVelX[1] = (arbol.deltax*(ATAQUEVEL)) / arbol.distance;
 		arbol.arbolVelY[1] = (arbol.deltay*(ATAQUEVEL)) / arbol.distance;
-		arbol.arbolRect[1].y += arbol.arbolVelY[1];
-		arbol.arbolRect[1].x += arbol.arbolVelX[1];
+		arbol.arbolRect[1].y += (int)arbol.arbolVelY[1];
+		arbol.arbolRect[1].x += (int)arbol.arbolVelX[1];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(arbol.arbolRect[1], dest)) {
 				arbol.arbolHasBeenCreated[1] = 0;
@@ -95,7 +95,7 @@ void arbolAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	}
 	if (collisioncheck(bala, boss.bossRect[3])) {
 		boss.healthPoints[3] -= 1;
-		boss.health[1] -= 2.55;
+		boss.health[1] -= (float)2.55;
 		if (boss.healthPoints[3] == 0) {
 			boss.bossesKilled += 1;
 			lifestruct.lifes = 3;

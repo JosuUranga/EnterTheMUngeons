@@ -115,8 +115,8 @@ void lavaBoss(void);
 
 void bossEsqueletoCreation();
 void esqBoss(SDL_Rect player);
-void esqAtakeakSortu(SDL_Renderer *rend, SDL_Rect player, SDL_Rect bala);
-void esqAtakeakMugitu(SDL_Renderer* rend, SDL_Rect dest, SDL_Rect bala);
+void esqAtakeakSortu(SDL_Rect player, SDL_Rect bala);
+void esqAtakeakMugitu(SDL_Rect dest, SDL_Rect bala);
 
 void nieveAtakeakSortu(SDL_Rect player, SDL_Rect bala);
 void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala);

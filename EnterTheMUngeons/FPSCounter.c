@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 void FPSCounter(void) {
-	ProtaB[0].aFPSCounter += 1;
+	ProtaB.aFPSCounter += 1;
 	if (lifestruct.invencivilty) {
 		lifestruct.invencivilityFPS += 1;
 		playerRect.playerFPS += 1;

@@ -16,17 +16,17 @@ void esqBoss(SDL_Rect player) {
 	
 	float deltax, deltay, distance;
 
-	deltax = (player).x - boss.bossRect[1].x;
-	deltay = (player).y - boss.bossRect[1].y;
-	distance = sqrt(deltax*deltax + deltay*deltay);
+	deltax = (float)(player).x - boss.bossRect[1].x;
+	deltay = (float)(player).y - boss.bossRect[1].y;
+	distance = (float)sqrt(deltax*deltax + deltay*deltay);
 	boss.bossVelX[1] = (deltax*(LAVABOSSVEL)) / distance;
 	boss.bossVelY[1] = (deltay*(LAVABOSSVEL)) / distance;
 
-	boss.bossRect[1].x += boss.bossVelX[1];
-	boss.bossRect[1].y += boss.bossVelY[1];
+	boss.bossRect[1].x += (int)boss.bossVelX[1];
+	boss.bossRect[1].y += (int)boss.bossVelY[1];
 
 }
-void esqAtakeakSortu(SDL_Renderer *rend, SDL_Rect player, SDL_Rect bala) {
+void esqAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 	if (EnemyV[0].FPSCounter > 50) {
 		if (esq.esqHasBeenCreated[0] == 0 && esq.counter[0] == 0) {
 			esq.esqRect[0].h = 26;
@@ -49,24 +49,24 @@ void esqAtakeakSortu(SDL_Renderer *rend, SDL_Rect player, SDL_Rect bala) {
 
 		}
 	}
-	esqAtakeakMugitu(rend, player, bala);
+	esqAtakeakMugitu(player, bala);
 }
-void esqAtakeakMugitu(SDL_Renderer* rend, SDL_Rect dest, SDL_Rect bala) {
+void esqAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 	float deltax, deltay, distance;
 	if (esq.counter[0] <= LAVATTL && esq.counter[1] <= LAVATTL) {
 		esq.counter[0]++;
 		esq.counter[1]++;
 	}
 
-	deltax = (dest).x + (dest).w / 2 - boss.bossRect[1].x;
-	deltay = (dest).y + (dest).h / 2 - boss.bossRect[1].y;
-	distance = sqrt(deltax*deltax + deltay * deltay);
+	deltax = (float)(dest).x + (dest).w / 2 - boss.bossRect[1].x;
+	deltay = (float)(dest).y + (dest).h / 2 - boss.bossRect[1].y;
+	distance = (float)sqrt(deltax*deltax + deltay * deltay);
 	
 	if (esq.esqHasBeenCreated[0] == 1) {
 		esq.esqVelX[0] = (deltax*(ATAQUEVEL)) / distance;
 		esq.esqVelY[0] = (deltay*(ATAQUEVEL)) / distance;
-		esq.esqRect[0].y += esq.esqVelY[0];
-		esq.esqRect[0].x += esq.esqVelX[0];
+		esq.esqRect[0].y += (int)esq.esqVelY[0];
+		esq.esqRect[0].x += (int)esq.esqVelX[0];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(esq.esqRect[0], dest)) {
 				esq.esqHasBeenCreated[0] = 0;
@@ -82,8 +82,8 @@ void esqAtakeakMugitu(SDL_Renderer* rend, SDL_Rect dest, SDL_Rect bala) {
 	if (esq.esqHasBeenCreated[1] == 1) {
 		esq.esqVelX[1] = (deltax*(ATAQUEVEL)) / distance;
 		esq.esqVelY[1] = (deltay*(ATAQUEVEL)) / distance;
-		esq.esqRect[1].y += esq.esqVelY[1];
-		esq.esqRect[1].x += esq.esqVelX[1];
+		esq.esqRect[1].y += (int)esq.esqVelY[1];
+		esq.esqRect[1].x += (int)esq.esqVelX[1];
 		if (!lifestruct.invencivilty) {
 			if (collisioncheck(esq.esqRect[1], dest)) {
 				esq.esqHasBeenCreated[1] = 0;
@@ -101,7 +101,7 @@ void esqAtakeakMugitu(SDL_Renderer* rend, SDL_Rect dest, SDL_Rect bala) {
 	}
 	if (collisioncheck(bala, boss.bossRect[1])) {
 		boss.healthPoints[1] -= 1;
-		boss.health[3] -= 5.1;
+		boss.health[3] -= (float)5.1;
 		//printf("%d\n", boss.healthPoints[0]);
 		if (boss.healthPoints[1] == 0) {
 			lifestruct.lifes = 3;
