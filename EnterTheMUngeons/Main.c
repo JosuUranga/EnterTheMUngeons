@@ -1,10 +1,6 @@
 #include "Functions.h"
 
 SDL_Window* window = NULL;
-//SDL_Renderer* levelmanagerstruct.rend = NULL;
-//SDL_Renderer* TakeRenderer(void) { return levelmanagerstruct.rend; }
-
-
 int main(int argc, char *argv[])
 {
 	InitRect();
