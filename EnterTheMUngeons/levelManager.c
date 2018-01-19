@@ -6,10 +6,7 @@ void levelManager(void) {
 
 	if (levelmanagerstruct.level == 0) {
 		enemySpawn.enemykilled[0] = 1;
-		levelmanagerstruct.door1ON = 1;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 1;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(1, 1, 1, 1);
 		enemySpawn.enemyL[1] = 0;
 		enemySpawn.enemyL[2] = 0;
 		enemySpawn.enemyL[3] = 0;
@@ -41,75 +38,29 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[0], NULL, NULL);
 				if (boss.hasSpawned[4] == 0) {
 					finalBoss();
-					finalAtakeakSortu(playerRect.player, playerRect.Bala);
-					boss.bossLifeFrame.w = boss.bossRect[4].w;
-					boss.bossLifeFrame.h = 20;//6
-					boss.bossLifeFrame.x = boss.bossRect[4].x;
-					boss.bossLifeFrame.y = boss.bossRect[4].y - 20;
-					boss.bossLife.w = final.health[0];
-					boss.bossLife.h = 9;
-					boss.bossLife.x = boss.bossRect[4].x + 16;
-					boss.bossLife.y = boss.bossRect[4].y - 14;
-					boss.bossLife2.w = final.health[1];
-					boss.bossLife2.h = 9;
-					boss.bossLife2.x = boss.bossRect[4].x + 16;
-					boss.bossLife2.y = boss.bossRect[4].y - 14;
-					boss.bossLife3.w = final.health[2];
-					boss.bossLife3.h = 9;
-					boss.bossLife3.x = boss.bossRect[4].x + 16;
-					boss.bossLife3.y = boss.bossRect[4].y - 14;
-					enemySpawn.enemykilled[0] = 0;
 				}
 			}
 			break;
 
 		case 1:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[1], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case1x;
-			posstruct.y = levelmanagerstruct.case1y;
-			printf("Entrando por puerta numero 1\n");
-			levelmanagerstruct.level = 1;
-			enemySpawn.enemyController[1] = 1;
-			enemySpawn.enemyL[1] = 1;
-			resetBullet();
-			lifestruct.invencivilty = 0;
+			levelmanagerstructcaseprincipal(1, levelmanagerstruct.case1x, levelmanagerstruct.case1y);
 			return;
 			break;
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[4], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			levelmanagerstruct.level = 2;
-			enemySpawn.enemyL[2] = 1;
-			enemySpawn.enemyController[2] = 1;
-			resetBullet();
-			printf("Entrando por puerta numero 2\n");
-			lifestruct.invencivilty = 0;
+			levelmanagerstructcaseprincipal(2, levelmanagerstruct.case2x, levelmanagerstruct.case2y);
 			return;
 			break;
 		case 3:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[6], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case3x;
-			posstruct.y = levelmanagerstruct.case3y;
-			levelmanagerstruct.level = 3;
-			enemySpawn.enemyL[3] = 1;
-			enemySpawn.enemyController[3] = 1;
-			resetBullet();
-			printf("Entrando por puerta numero 3\n");
-			lifestruct.invencivilty = 0;
+			levelmanagerstructcaseprincipal(3, levelmanagerstruct.case3x, levelmanagerstruct.case3y);
 			return;
 			break;
 		
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[9], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			levelmanagerstruct.level = 4;
-			enemySpawn.enemyL[4] = 1;
-			enemySpawn.enemyController[4] = 1;
-			resetBullet();
-			printf("Entrando por puerta numero 4\n");
-			lifestruct.invencivilty = 0;
+			levelmanagerstructcaseprincipal(4, levelmanagerstruct.case4x, levelmanagerstruct.case4y);
 			return;
 			break;
 		default:
@@ -118,10 +69,8 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 1) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 0;
-		levelmanagerstruct.door3ON = 1;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(0, 0, 1, 1);
+
 		spawnTheEnemies();
 		
 		switch (doors())
@@ -131,35 +80,16 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[1], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[1], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 3:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[0], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case3x;
-			posstruct.y = levelmanagerstruct.case3y;
-			levelmanagerstruct.level = 0;
-			enemySpawn.enemyController[1] = 0;
-			enemySpawn.enemyController[0] = 0;
-			resetBullet();
-			if (boss.sound[5] == 0 && boss.bossesKilled == 4) {
-				boss.sound[5] = 1;
-				loadTheMusic(".\\Sounds\\Music\\FinalBoss.wav");
-				playMusic();
-				playSound(4);
-			}
-			printf("Entrando por puerta numero 3\n");
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case3x, levelmanagerstruct.case3y,0);
+			sonidobossfinal();
 			return;
 			break;
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[2], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			printf("Entrando por puerta numero 4\n");
-			levelmanagerstruct.level = 5;
-			enemySpawn.enemyL[5] = 1;
-			enemySpawn.enemyController[5] = 1;
-			enemySpawn.enemyController[1] = 0;
-			resetBullet();
+			levelmanagerstructcasenormal(5, levelmanagerstruct.case4x, levelmanagerstruct.case4y);
 			return;
 			break;
 		default:
@@ -168,12 +98,8 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 2) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(0, 1, 0, 1);
 		spawnTheEnemies();
-
 		switch (doors())
 		{
 		case 0:
@@ -181,36 +107,17 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[4], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[4], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
-
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[5], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			printf("Entrando por puerta numero 2\n");
-			levelmanagerstruct.level = 7;
-			enemySpawn.enemyL[7] = 1;
-			enemySpawn.enemyController[2] = 0;
-			enemySpawn.enemyController[7] = 1;
-			resetBullet();
+			levelmanagerstructcasenormal(7, levelmanagerstruct.case2x, levelmanagerstruct.case2y);
 			return;
 			break;
 
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[0], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			printf("Entrando por puerta numero 4\n");
-			levelmanagerstruct.level = 0;
-			enemySpawn.enemyController[2] = 0;
-			resetBullet();
-			if (boss.sound[5] == 0 && boss.bossesKilled == 4) {
-				boss.sound[5] = 1;
-				loadTheMusic(".\\Sounds\\Music\\FinalBoss.wav");
-				playMusic();
-				playSound(4);
-			}
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case4x, levelmanagerstruct.case4y,0);
+			sonidobossfinal();
 			return;
 			break;
 		default:
@@ -219,10 +126,7 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 3) {
-		levelmanagerstruct.door1ON = 1;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 0;
+		levelmanagerstructdoors(1, 1, 0,0);
 		spawnTheEnemies();
 
 		switch (doors())
@@ -232,46 +136,24 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[6], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[6], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 1:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[0], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case1x;
-			posstruct.y = levelmanagerstruct.case1y;
-			printf("Entrando por puerta numero 1\n");
-			levelmanagerstruct.level = 0;
-			enemySpawn.enemyController[3] = 0;
-			resetBullet();
-			if (boss.sound[5] == 0 && boss.bossesKilled == 4) {
-				boss.sound[5] = 1;
-				loadTheMusic(".\\Sounds\\Music\\FinalBoss.wav");
-				playMusic();
-				playSound(4);
-			}
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case1x, levelmanagerstruct.case1y,0);
+			sonidobossfinal();
 			return;
 			break;
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[7], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			printf("Entrando por puerta numero 2\n");
-			enemySpawn.enemyL[8] = 1;
-			enemySpawn.enemyController[3] = 0;
-			enemySpawn.enemyController[8] = 1;
-			levelmanagerstruct.level = 8;
-			resetBullet();
+			levelmanagerstructcasenormal(8, levelmanagerstruct.case2x, levelmanagerstruct.case2y);
 			break;
-
 		default:
 			break;
 		}
 	}
 
 	if (levelmanagerstruct.level == 4) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(0, 1, 0, 1);
 		spawnTheEnemies();
 
 		switch (doors())
@@ -281,34 +163,16 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[9], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[9], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[0], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			printf("Entrando por puerta numero 2\n");
-			levelmanagerstruct.level = 0;
-			enemySpawn.enemyController[4] = 0;
-			resetBullet();
-			if (boss.sound[5] == 0 && boss.bossesKilled == 4) {
-				boss.sound[5] = 1;
-				loadTheMusic(".\\Sounds\\Music\\FinalBoss.wav");
-				playMusic();
-				playSound(4);
-			}
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case2x, levelmanagerstruct.case2y,0);
+			sonidobossfinal();
 			return;
 			break;
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[10], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			printf("Entrando por puerta numero 4\n");
-			enemySpawn.enemyL[10] = 1;
-			levelmanagerstruct.level = 10;
-			enemySpawn.enemyController[10] = 1;
-			enemySpawn.enemyController[4] = 0;
-			resetBullet();
+			levelmanagerstructcasenormal(10, levelmanagerstruct.case4x, levelmanagerstruct.case4y);
 			return;
 			break;
 		default:
@@ -317,10 +181,7 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 5) {
-		levelmanagerstruct.door1ON = 1;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 0;
+		levelmanagerstructdoors(1, 1, 0, 0);
 		spawnTheEnemies();
 
 		switch (doors())
@@ -330,28 +191,15 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[2], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[2], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 1:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[3], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case1x;
-			posstruct.y = levelmanagerstruct.case1y;
-			printf("Entrando por puerta numero 1\n");
-			levelmanagerstruct.level = 6;
-			enemySpawn.enemyL[6] = 1;
-			enemySpawn.enemyController[5] = 0;
-			enemySpawn.enemyController[6] = 1;
-			resetBullet();
+			levelmanagerstructcasenormal(6, levelmanagerstruct.case1x, levelmanagerstruct.case1y);
 			return;
 			break;
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[1], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			printf("Entrando por puerta numero 2\n");
-			enemySpawn.enemyController[5] = 0;
-			levelmanagerstruct.level = 1;
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case2x, levelmanagerstruct.case2y,1);
 			return;
 			break;
 
@@ -361,30 +209,15 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 6) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 0;
-		levelmanagerstruct.door3ON = 1;
-		levelmanagerstruct.door4ON = 0;
-
+		levelmanagerstructdoors(0, 0, 1, 0);
 		if (boss.hasSpawned[0] == 0) {
 			lavaBoss();
 			lavaAtakeakSortu(TakeRenderer(), playerRect.player, playerRect.Bala);
-			boss.bossLifeFrame.w = 320;
-			boss.bossLifeFrame.h = 20;
-			boss.bossLifeFrame.x = 160;
-			boss.bossLifeFrame.y = 10;
-			boss.bossLife.w = boss.health[0];
-			boss.bossLife.h = 9;
-			boss.bossLife.x = 193;
-			boss.bossLife.y = 16;
+			ValorRects(&boss.bossLifeFrame, 320, 20, 160,10);
+			ValorRects(&boss.bossLife, boss.health[0], 9, 193, 16);
 			enemySpawn.enemykilled[6] = 0;
-			if (boss.sound[0] == 0) { 
-			playSound(2); 
-			boss.sound[0] = 1;
-			}
+			sonidoboss(0, 2);
 		}
-
-
 		switch (doors())
 		{
 		case 0:
@@ -392,16 +225,10 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[3], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[3], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 3:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[2], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case3x;
-			posstruct.y = levelmanagerstruct.case3y;
-			levelmanagerstruct.level = 5;
-			enemySpawn.enemyController[6] = 0;
-			printf("Entrando por puerta numero 3\n");
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case3x, levelmanagerstruct.case3y,5);
 			return;
 			break;
 		default:
@@ -410,25 +237,13 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 7) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 0;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(0, 0, 0, 1);
 		if (boss.hasSpawned[3] == 0) {
 			arbolAtakeakSortu(playerRect.player, playerRect.Bala);
-			boss.bossLifeFrame.w = 320;
-			boss.bossLifeFrame.h = 20;
-			boss.bossLifeFrame.x = 160;
-			boss.bossLifeFrame.y = 10;
-			boss.bossLife.w = boss.health[1];
-			boss.bossLife.h = 9;
-			boss.bossLife.x = 193;
-			boss.bossLife.y = 16;
+			ValorRects(&boss.bossLifeFrame, 320, 20, 160, 10);
+			ValorRects(&boss.bossLife, boss.health[1], 9, 193, 16);
 			enemySpawn.enemykilled[7] = 0;
-			if (boss.sound[3] == 0) {
-				playSound(3);
-				boss.sound[3] = 1;
-			}
+			sonidoboss(3, 3);
 		}
 
 		switch (doors())
@@ -438,16 +253,10 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[5], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[5], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[4], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			printf("Entrando por puerta numero 4\n");
-			levelmanagerstruct.level = 2;
-			enemySpawn.enemyController[7] = 0;
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case4x, levelmanagerstruct.case4y,2);
 			return;
 			break;
 		default:
@@ -456,10 +265,7 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 8) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 0;
-		levelmanagerstruct.door3ON = 1;
-		levelmanagerstruct.door4ON = 1;
+		levelmanagerstructdoors(0, 0, 1, 1);
 		spawnTheEnemies();
 
 		switch (doors())
@@ -469,28 +275,15 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[7], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[7], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 3:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[8], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case3x;
-			posstruct.y = levelmanagerstruct.case3y;
-			printf("Entrando por puerta numero 1\n");
-			enemySpawn.enemyL[9] = 1;
-			levelmanagerstruct.level = 9;
-			enemySpawn.enemyController[9] = 1;
-			enemySpawn.enemyController[8] = 0;
-			resetBullet();
+			levelmanagerstructcasenormal(9, levelmanagerstruct.case3x, levelmanagerstruct.case3y);
 			return;
 			break;
 		case 4:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[6], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case4x;
-			posstruct.y = levelmanagerstruct.case4y;
-			printf("Entrando por puerta numero 2\n");
-			enemySpawn.enemyController[8] = 0;
-			levelmanagerstruct.level = 3;
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case4x, levelmanagerstruct.case4y,3);
 			break;
 
 		default:
@@ -499,26 +292,14 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 9) {
-		levelmanagerstruct.door1ON = 1;
-		levelmanagerstruct.door2ON = 0;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 0;
+		levelmanagerstructdoors(1, 0, 0, 0);
 		if (boss.hasSpawned[2] == 0) {
 			nieveBoss();
 			nieveAtakeakSortu(playerRect.player, playerRect.Bala);
-			boss.bossLifeFrame.w = 320;
-			boss.bossLifeFrame.h = 20;
-			boss.bossLifeFrame.x = 160;
-			boss.bossLifeFrame.y = 450;
-			boss.bossLife.w = boss.health[2];
-			boss.bossLife.h = 9;
-			boss.bossLife.x = 193;
-			boss.bossLife.y = 456;
+			ValorRects(&boss.bossLifeFrame, 320, 20, 160, 450);
+			ValorRects(&boss.bossLife, boss.health[2], 9, 193, 456);
 			enemySpawn.enemykilled[9] = 0;
-			if (boss.sound[2] == 0) {
-				playSound(1);
-				boss.sound[2] = 1;
-			}
+			sonidoboss(2,1);
 		}
 
 
@@ -529,16 +310,10 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[8], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[8], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 1:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[7], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case1x;
-			posstruct.y = levelmanagerstruct.case1y;
-			printf("Entrando por puerta numero 1\n");
-			levelmanagerstruct.level = 8;
-			enemySpawn.enemyController[9] = 0;
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case1x, levelmanagerstruct.case1y,8);
 			return;
 			break;
 		default:
@@ -547,27 +322,15 @@ void levelManager(void) {
 	}
 
 	if (levelmanagerstruct.level == 10) {
-		levelmanagerstruct.door1ON = 0;
-		levelmanagerstruct.door2ON = 1;
-		levelmanagerstruct.door3ON = 0;
-		levelmanagerstruct.door4ON = 0;
+		levelmanagerstructdoors(0, 1, 0, 0);
 		
 		if (boss.hasSpawned[1] == 0) {
 			esqBoss(playerRect.player);
 			esqAtakeakSortu(TakeRenderer(), playerRect.player, playerRect.Bala);
-			boss.bossLifeFrame.w = 320;
-			boss.bossLifeFrame.h = 20;
-			boss.bossLifeFrame.x = 160;
-			boss.bossLifeFrame.y = 10;
-			boss.bossLife.w = boss.health[3];
-			boss.bossLife.h = 9;
-			boss.bossLife.x = 193;
-			boss.bossLife.y = 16;
+			ValorRects(&boss.bossLifeFrame, 320, 20, 160, 10);
+			ValorRects(&boss.bossLife, boss.health[3], 9, 193, 16);
 			enemySpawn.enemykilled[10] = 0;
-			if (boss.sound[1] == 0) {
-				playSound(0);
-				boss.sound[1] = 1;
-			}
+			sonidoboss(1, 0);
 		}
 
 
@@ -578,16 +341,10 @@ void levelManager(void) {
 				SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[10], NULL, NULL);
 			}
 			else SDL_RenderCopy(TakeRenderer(), dooropenstruct.texturak[10], NULL, NULL);
-			//printf("No entro por ninguna puerta\n");
 			break;
 		case 2:
 			SDL_RenderCopy(TakeRenderer(), doorclosetruct.texturak[9], NULL, NULL);
-			posstruct.x = levelmanagerstruct.case2x;
-			posstruct.y = levelmanagerstruct.case2y;
-			printf("Entrando por puerta numero 1\n");
-			levelmanagerstruct.level = 4;
-			enemySpawn.enemyController[10] = 0;
-			resetBullet();
+			levelmanagerstructcasevolverprincipal(levelmanagerstruct.case2x, levelmanagerstruct.case2y,4);
 			return;
 			break;
 		default:
@@ -598,32 +355,51 @@ void levelManager(void) {
 	return levelmanagerstruct.level;
 }
 
-void spawnTheEnemies() {
-	if (enemySpawn.enemyL[levelmanagerstruct.level]) {
-		SpawnEnemy();
+void levelmanagerstructdoors(int a, int b, int c, int d) {
 
-		if (!enemySpawn.hasSpawned[levelmanagerstruct.level]) {
-			for (int i = 0; i <= MAXENEMY; i++) {
-				EnemyV[i].HP = 3;
-				EnemyV[i].CanCreateB = 0;
-				EnemyV[i].deeadSound = 0;
-				EnemyV[i].killed = 0;
-			}
+	levelmanagerstruct.door1ON = a;
+	levelmanagerstruct.door2ON =b;
+	levelmanagerstruct.door3ON = c;
+	levelmanagerstruct.door4ON = d;
+}
+void levelmanagerstructcaseprincipal(int a, int b, int c) {
+	posstruct.x = b;
+	posstruct.y = c;
+	levelmanagerstruct.level = a;
+	enemySpawn.enemyController[a] = 1;
+	enemySpawn.enemyL[a] = 1;
+	resetBullet();
+	lifestruct.invencivilty = 0;
+}
+void levelmanagerstructcasenormal(int a, int b, int c) {
+		posstruct.x = b;
+		posstruct.y = c;
+		enemySpawn.enemyL[a] = 1;
+		enemySpawn.enemyController[a] = 1;
+		enemySpawn.enemyController[levelmanagerstruct.level] = 0;
+		levelmanagerstruct.level = a;
+		resetBullet();
+	}
+void levelmanagerstructcasevolverprincipal(int b, int c,int a) {
+	posstruct.x = b;
+	posstruct.y = c;
+	enemySpawn.enemyController[levelmanagerstruct.level] = 0;
+	levelmanagerstruct.level = a;
+	resetBullet();
+}
 
-			enemySpawn.enemykilled[levelmanagerstruct.level] = 0;
-			enemySpawn.hasSkinChanged = 0;
-		}
-		enemySpawn.hasSpawned[levelmanagerstruct.level] = 1;
+void sonidobossfinal(void) {
+	if (boss.sound[5] == 0 && boss.bossesKilled == 4) {
+		boss.sound[5] = 1;
+		loadTheMusic(".\\Sounds\\Music\\FinalBoss.wav");
+		playMusic();
+		playSound(4);
 	}
 }
 
-void resetBullet() {
-	for (int i = 0; i <= MAXENEMY; i++)
-	{
-		EnemyV[i].BulletCreated = 0;
-		EnemyV[i].FPSCounter = 0;
-		enemySpawn.bulletFCreated = 0;
-		enemySpawn.Bullet[i].h = 0;
-		enemySpawn.Bullet[i].w = 0;
+void sonidoboss(int a, int b) {
+	if (boss.sound[a] == 0) {
+		playSound(b);
+		boss.sound[a] = 1;
 	}
 }

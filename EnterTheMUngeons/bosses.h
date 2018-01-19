@@ -132,4 +132,8 @@ void finalBoss();
 void finalAtakeakSortu(SDL_Rect player, SDL_Rect bala);
 void finalAtakeakMugitu(SDL_Rect dest, SDL_Rect bala);
 
+void sonidobossfinal(void);
+void sonidoboss(int a, int b);
+
+
 #endif

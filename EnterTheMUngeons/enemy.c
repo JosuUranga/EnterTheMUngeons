@@ -244,3 +244,33 @@ void EnemyTexture(void) {
 	}
 
 }
+
+void spawnTheEnemies() {
+	if (enemySpawn.enemyL[levelmanagerstruct.level]) {
+		SpawnEnemy();
+
+		if (!enemySpawn.hasSpawned[levelmanagerstruct.level]) {
+			for (int i = 0; i <= MAXENEMY; i++) {
+				EnemyV[i].HP = 3;
+				EnemyV[i].CanCreateB = 0;
+				EnemyV[i].deeadSound = 0;
+				EnemyV[i].killed = 0;
+			}
+
+			enemySpawn.enemykilled[levelmanagerstruct.level] = 0;
+			enemySpawn.hasSkinChanged = 0;
+		}
+		enemySpawn.hasSpawned[levelmanagerstruct.level] = 1;
+	}
+}
+
+void resetBullet() {
+	for (int i = 0; i <= MAXENEMY; i++)
+	{
+		EnemyV[i].BulletCreated = 0;
+		EnemyV[i].FPSCounter = 0;
+		enemySpawn.bulletFCreated = 0;
+		enemySpawn.Bullet[i].h = 0;
+		enemySpawn.Bullet[i].w = 0;
+	}
+}

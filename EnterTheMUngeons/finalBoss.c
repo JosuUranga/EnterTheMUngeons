@@ -1,4 +1,6 @@
 #include "Functions.h"
+
+
 void bossFinalCreation() {
 	boss.bossRect[4].h = 100;
 	boss.bossRect[4].w = 150;
@@ -74,6 +76,12 @@ void finalBoss() {
 		boss.bossRect[4].x = WINDOW_WIDTH / 2 - 75;
 		boss.bossRect[4].y = WINDOW_HEIGHT / 2 - 50;
 	}
+	finalAtakeakSortu(playerRect.player, playerRect.Bala);
+	ValorRects(&boss.bossLifeFrame, boss.bossRect[4].w, 20, boss.bossRect[4].x, boss.bossRect[4].y - 20);
+	ValorRects(&boss.bossLife, final.health[0], 9, boss.bossRect[4].x + 16, boss.bossRect[4].y - 14);
+	ValorRects(&boss.bossLife2, final.health[1], 9, boss.bossRect[4].x + 16, boss.bossRect[4].y - 14);
+	ValorRects(&boss.bossLife3, final.health[2], 9, boss.bossRect[4].x + 16, boss.bossRect[4].y - 14);
+	enemySpawn.enemykilled[0] = 0;
 	
 }
 

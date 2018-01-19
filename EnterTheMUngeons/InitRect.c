@@ -32,3 +32,11 @@ void InitRect(void) {
 	
 
 }
+
+
+void ValorRects(SDL_Rect* a, int b, int c, int d, int e) {
+	(*a).w=b;
+	(*a).h=c;
+	(*a).x=d;
+	(*a).y = e;
+}

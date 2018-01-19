@@ -50,6 +50,9 @@ typedef struct {
 	int invencivilty;
 	int invencivilityFPS;
 	int score;
+	char str[30];
+	char str2[30];
+	char str3[30];
 	SDL_Surface* life_surface[6];
 	SDL_Texture* life_texture[6];
 	int constantFPScounter;
@@ -258,6 +261,11 @@ void spawnTheEnemies();
 void resetBullet();
 void hizkuntza(void);
 void showWeapon(void);
+void levelmanagerstructdoors(int a, int b, int c, int d);
+void ValorRects(SDL_Rect* a, int b, int c, int d, int e);
+void levelmanagerstructcaseprincipal(int a, int b, int c);
+void levelmanagerstructcasenormal(int a, int b, int c);
+void levelmanagerstructcasevolverprincipal(int b, int c, int a);
 
 
 #endif

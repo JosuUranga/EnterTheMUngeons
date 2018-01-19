@@ -327,21 +327,20 @@ enemy.c(240): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetr
 enemy.c(241): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 enemy.c(241): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   finalBoss.c
-finalBoss.c(23): warning C4013: 'time' sin definir; se supone que extern devuelve como resultado int
-finalBoss.c(90): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-finalBoss.c(91): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-finalBoss.c(92): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-finalBoss.c(102): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-finalBoss.c(103): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-finalBoss.c(104): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-finalBoss.c(120): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(121): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(137): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(138): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(196): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(197): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(200): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(201): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(25): warning C4013: 'time' sin definir; se supone que extern devuelve como resultado int
+finalBoss.c(81): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(82): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(83): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(98): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+finalBoss.c(99): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+finalBoss.c(100): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+finalBoss.c(110): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+finalBoss.c(111): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+finalBoss.c(112): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+finalBoss.c(128): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(129): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(145): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(146): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 finalBoss.c(204): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 finalBoss.c(205): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 finalBoss.c(208): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
@@ -354,9 +353,13 @@ finalBoss.c(220): warning C4244: '+=': conversión de 'float' a 'int'; posible p
 finalBoss.c(221): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 finalBoss.c(224): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 finalBoss.c(225): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-finalBoss.c(243): warning C4305: '-=': truncamiento de 'double' a 'float'
-finalBoss.c(244): warning C4305: '-=': truncamiento de 'double' a 'float'
-finalBoss.c(245): warning C4305: '-=': truncamiento de 'double' a 'float'
+finalBoss.c(228): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(229): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(232): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(233): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+finalBoss.c(251): warning C4305: '-=': truncamiento de 'double' a 'float'
+finalBoss.c(252): warning C4305: '-=': truncamiento de 'double' a 'float'
+finalBoss.c(253): warning C4305: '-=': truncamiento de 'double' a 'float'
   gameOver.c
 gameOver.c(7): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
 gameOver.c(7): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
@@ -368,148 +371,111 @@ gameOver.c(13): warning C4024: 'SDL_RenderCopy': tipos distintos para el paráme
 gameOver.c(16): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 gameOver.c(16): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   levelManager.c
-levelManager.c(25): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+levelManager.c(22): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+levelManager.c(22): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(22): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 levelManager.c(25): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 levelManager.c(25): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 levelManager.c(28): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 levelManager.c(28): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 levelManager.c(31): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 levelManager.c(31): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(34): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(34): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(41): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(41): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(49): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(53): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(57): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(67): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(67): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(68): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(69): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(79): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(79): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(80): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(81): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(38): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(38): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(46): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(46): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(51): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(51): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(56): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(56): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(62): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(62): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(80): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(80): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(82): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(82): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(85): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(85): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 levelManager.c(91): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 levelManager.c(91): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(92): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(93): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(104): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(104): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(105): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(106): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(131): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(131): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(133): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(133): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(137): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(137): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(138): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(139): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(154): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(154): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(155): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(156): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(181): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(181): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(183): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(183): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(188): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(188): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(189): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(190): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(107): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(107): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(109): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(109): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(112): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(112): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(118): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(118): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(136): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(136): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(138): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(138): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(141): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(141): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(147): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(147): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(163): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(163): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(165): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(165): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(168): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(168): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(174): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(174): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(191): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(191): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(193): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(193): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(196): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(196): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 levelManager.c(201): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 levelManager.c(201): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(202): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(203): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(232): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(232): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(234): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(234): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(238): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(238): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(239): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(240): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(254): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(254): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(255): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(256): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(281): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(281): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(283): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(283): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(287): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(287): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(288): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(289): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(303): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(303): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(304): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(305): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(330): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(330): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(332): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(332): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(336): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(336): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(337): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(338): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(348): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(348): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(349): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(350): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(371): warning C4087: 'lavaAtakeakSortu': se ha declarado con la lista de parámetros 'void'
-levelManager.c(376): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(392): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(392): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(394): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(394): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(398): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(398): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(399): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(400): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(423): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(438): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(438): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(440): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(440): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(444): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(444): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(445): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(446): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(469): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(469): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(471): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(471): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(475): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(475): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(476): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(477): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(487): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(487): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(488): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(489): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(513): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(529): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(529): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(531): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(531): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(535): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(535): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(536): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(537): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(557): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(557): warning C4024: 'esqAtakeakSortu': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(562): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-levelManager.c(578): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(578): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(580): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(580): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(584): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-levelManager.c(584): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-levelManager.c(585): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(586): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-levelManager.c(598): warning C4098: 'levelManager': función 'void' que devuelve un valor
+levelManager.c(215): warning C4087: 'lavaAtakeakSortu': se ha declarado con la lista de parámetros 'void'
+levelManager.c(217): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+levelManager.c(225): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(225): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(227): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(227): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(230): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(230): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(244): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+levelManager.c(253): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(253): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(255): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(255): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(258): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(258): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(275): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(275): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(277): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(277): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(280): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(280): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(285): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(285): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(300): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+levelManager.c(310): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(310): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(312): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(312): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(315): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(315): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(329): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(329): warning C4024: 'esqAtakeakSortu': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(331): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+levelManager.c(341): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(341): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(343): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(343): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(346): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+levelManager.c(346): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+levelManager.c(355): warning C4098: 'levelManager': función 'void' que devuelve un valor
+levelManager.c(366): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(367): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(375): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(376): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(384): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+levelManager.c(385): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
   life.c
 life.c(31): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
 life.c(31): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
@@ -560,15 +526,15 @@ playerShooting.c(28): warning C4244: '=': conversión de 'int' a 'float'; posibl
 playerShooting.c(29): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
   restart.c
   score.c
-score.c(32): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
-score.c(32): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-score.c(32): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-score.c(80): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-score.c(80): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-score.c(82): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-score.c(82): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-score.c(84): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-score.c(84): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+score.c(30): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+score.c(30): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+score.c(30): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+score.c(77): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+score.c(77): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+score.c(79): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+score.c(79): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+score.c(81): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+score.c(81): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
   soinua.c
   weapon.c
 weapon.c(24): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
@@ -577,8 +543,9 @@ weapon.c(24): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetr
 weapon.c(28): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 weapon.c(28): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   Generando código
-  4 of 77 functions ( 5.2%) were compiled, the rest were copied from previous compilation.
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(61): warning C4715: 'WinDieBotoiak': no todas las rutas de acceso de control devuelven un valor
+  24 of 84 functions (28.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    5 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   EnterTheMUngeons.vcxproj -> C:\Users\Usuario\Desktop\Prog1\Prog1\PBL\Main\EnterTheMUngeons\Release\EnterTheMUngeons.exe
