@@ -152,7 +152,6 @@
     <ClCompile Include="YouWin.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bosses.h" />
     <ClInclude Include="Functions.h" />
   </ItemGroup>
   <ItemGroup>

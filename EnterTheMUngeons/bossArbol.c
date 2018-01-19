@@ -97,6 +97,7 @@ void arbolAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			boss.hasSpawned[3] = 1;
 			ValorRects(&arbol.arbolRect[0], 0, 0, 0, 0);
 			ValorRects(&arbol.arbolRect[1], 0, 0, 0, 0);
+			lifestruct.tempScore = lifestruct.score;
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

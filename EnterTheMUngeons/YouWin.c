@@ -1,6 +1,7 @@
 #include "Functions.h"
 
 void YouWin(void) {
+	lifestruct.tempScore = lifestruct.score;
 	switch (levelmanagerstruct.hizkuntza)
 	{
 	case (1):

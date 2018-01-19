@@ -121,6 +121,7 @@ void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			boss.hasSpawned[2] = 1;
 			ValorRects(&nieve.nieveRect[0], 0, 0, 0, 0);
 			ValorRects(&nieve.nieveRect[1], 0, 0, 0, 0);
+			lifestruct.tempScore = lifestruct.score;
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

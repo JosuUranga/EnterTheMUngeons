@@ -1,4 +1,4 @@
-#include "bosses.h"
+
 #include "Functions.h"
 
 void lavaBoss(void) {
@@ -97,6 +97,7 @@ void lavaAtakeakMugitu(void) {
 			boss.hasSpawned[0] = 1;
 			ValorRects(&lava.lavaRect[0], 0, 0, 0, 0);
 			ValorRects(&lava.lavaRect[1], 0, 0, 0, 0);
+			lifestruct.tempScore = lifestruct.score;
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

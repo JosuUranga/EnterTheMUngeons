@@ -1,29 +1,29 @@
-﻿  YouWin.c
-  weapon.c
+﻿  weapon.c
   soinua.c
   score.c
   restart.c
   playerShooting.c
   movement.c
   menu.c
-  Main.c
   life.c
   levelManager.c
-  InitSurfAndTex.c
-  InitStruct.c
-  InitRect.c
   gameOver.c
-  FPSCounter.c
   finalBoss.c
   enemy.c
   doors.c
   collisions.c
-  Generando código...
-  Compilando...
   bossLava.c
   bossHielo.c
   bossEsqueleto.c
   bossArbol.c
+  YouWin.c
+  Main.c
+  Generando código...
+  Compilando...
+  InitSurfAndTex.c
+  InitStruct.c
+  InitRect.c
+  FPSCounter.c
   Animations.c
   Generando código...
   EnterTheMUngeons.vcxproj -> C:\Users\Usuario\Desktop\Prog1\Prog1\PBL\Main\EnterTheMUngeons\Debug\EnterTheMUngeons.exe

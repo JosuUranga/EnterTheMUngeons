@@ -7,8 +7,7 @@ void InitScore(void) {
 }
 
 void ScoreRefresh(void) {
-	if (lifestruct.tempScore != lifestruct.score || lifestruct.score == 0) {
-
+	if (lifestruct.tempScore == lifestruct.score|| lifestruct.score==0) {
 		SDL_Color Color = { 255, 255, 255 };
 		if (levelmanagerstruct.playing == 1) {
 			switch (levelmanagerstruct.hizkuntza)
@@ -76,6 +75,7 @@ void ScoreRefresh(void) {
 				lifestruct.GameOver = 1;
 			}
 		}
+		lifestruct.tempScore += 1;
 	}
 
 
@@ -86,6 +86,8 @@ void SumScore(void) {
 		if (EnemyV[i].HP == 0 && EnemyV[i].killed == 0) {
 			lifestruct.score += 100;
 			EnemyV[i].killed = 1;
+			lifestruct.tempScore = lifestruct.score;
 		}
+		
 	}
 }

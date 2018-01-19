@@ -105,6 +105,7 @@ void esqAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			boss.hasSpawned[1] = 1;
 			ValorRects(&esq.esqRect[0], 0, 0, 0, 0);
 			ValorRects(&esq.esqRect[1], 0, 0, 0, 0);
+			lifestruct.tempScore = lifestruct.score;
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}
