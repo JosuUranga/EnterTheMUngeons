@@ -2,10 +2,7 @@
 
 
 void bossFinalCreation() {
-	boss.bossRect[4].h = 100;
-	boss.bossRect[4].w = 150;
-	boss.bossRect[4].x = WINDOW_WIDTH / 2 - 75;
-	boss.bossRect[4].y = WINDOW_HEIGHT / 2 - 50;
+	ValorRects(&boss.bossRect[4], 150, 100, WINDOW_WIDTH / 2 - 75, WINDOW_HEIGHT / 2 - 50);
 	boss.hasSpawned[4] = 0;
 	boss.healthPoints[4]= FINALBOSSHP;
 	final.counter[0] = 0;
@@ -88,10 +85,7 @@ void finalBoss() {
 void finalAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 	if (EnemyV[0].FPSCounter > 50&&boss.healthPoints[4]>100) {
 		if (final.finalHasBeenCreated[0] == 0 && final.counter[0] == 0) {
-			final.finalRect[0].h = 26;
-			final.finalRect[0].w = 26;
-			final.finalRect[0].x = boss.bossRect[4].x;
-			final.finalRect[0].y = boss.bossRect[4].y + 70;
+			ValorRects(&final.finalRect[0], 26, 26, boss.bossRect[4].x, boss.bossRect[4].y + 70);
 			final.finalVelY[0] = ATAQUEVEL - 4;
 			final.finalVelX[0] = ATAQUEVEL - 4;
 			final.finalHasBeenCreated[0] = 1;
@@ -100,10 +94,7 @@ void finalAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			final.distance = (float)sqrt(final.deltax*final.deltax + final.deltay * final.deltay);
 		}
 		if (final.finalHasBeenCreated[1] == 0 && final.counter[1] == 0) {
-			final.finalRect[1].h = 26;
-			final.finalRect[1].w = 26;
-			final.finalRect[1].x = boss.bossRect[4].x + 70;
-			final.finalRect[1].y = boss.bossRect[4].y + 55;
+			ValorRects(&final.finalRect[1], 26, 26, boss.bossRect[4].x+70, boss.bossRect[4].y + 55);
 			final.finalVelY[1] = ATAQUEVEL - 4;
 			final.finalVelX[1] = ATAQUEVEL - 4;
 			final.finalHasBeenCreated[1] = 1;
@@ -256,20 +247,14 @@ void finalAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			lifestruct.score += 1000;
 			final.counter[0] = 50;
 			final.counter[1] = 50;
-			boss.bossRect[4].w = 0;
-			boss.bossRect[4].h = 0;
+			ValorRects(&boss.bossRect[4], 0,0,0,0);
 			boss.hasSpawned[4] = 1;
-			final.finalRect[0].w = 0;
-			final.finalRect[1].w = 0;
-			final.finalRect[0].h = 0;
-			final.finalRect[0].h = 0;
+			ValorRects(&final.finalRect[0], 0, 0, 0, 0);
+			ValorRects(&final.finalRect[1], 0, 0, 0, 0);
 			playSound(4);
-			boss.bossLife.w = 0;
-			boss.bossLife.h = 0;
-			boss.bossLife2.w = 0;
-			boss.bossLife2.h = 0;
-			boss.bossLife3.w = 0;
-			boss.bossLife3.h = 0;
+			ValorRects(&boss.bossLife, 0, 0, 0, 0);
+			ValorRects(&boss.bossLife2, 0, 0, 0, 0);
+			ValorRects(&boss.bossLife3, 0, 0, 0, 0);
 		}
 	}
 }

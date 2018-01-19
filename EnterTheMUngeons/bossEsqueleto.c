@@ -1,9 +1,6 @@
 #include "Functions.h"
 void bossEsqueletoCreation() {
-	boss.bossRect[1].h = 100;
-	boss.bossRect[1].w = 82;
-	boss.bossRect[1].x = 50;
-	boss.bossRect[1].y = 50;
+	ValorRects(&boss.bossRect[1], 82, 100, 50, 50);
 	boss.bossVelX[1] = 25;
 	boss.bossVelY[1] = 25;
 	boss.hasSpawned[1] = 0;
@@ -29,20 +26,14 @@ void esqBoss(SDL_Rect player) {
 void esqAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 	if (EnemyV[0].FPSCounter > 50) {
 		if (esq.esqHasBeenCreated[0] == 0 && esq.counter[0] == 0) {
-			esq.esqRect[0].h = 26;
-			esq.esqRect[0].w = 26;
-			esq.esqRect[0].x = boss.bossRect[1].x + 41;
-			esq.esqRect[0].y = boss.bossRect[1].y + 50;
+			ValorRects(&esq.esqRect[0], 26, 26, boss.bossRect[1].x + 41, boss.bossRect[1].y + 50);
 			esq.esqVelY[0] = ATAQUEVEL - 2;
 			esq.esqVelX[0] = ATAQUEVEL - 2;
 			esq.esqHasBeenCreated[0] = 1;
 
 		}
 		if (esq.esqHasBeenCreated[1] == 0 && esq.counter[1] == 0) {
-			esq.esqRect[1].h = 26;
-			esq.esqRect[1].w = 26;
-			esq.esqRect[1].x = boss.bossRect[1].x + 41;
-			esq.esqRect[1].y = boss.bossRect[1].y + 50;
+			ValorRects(&esq.esqRect[1], 26, 26, boss.bossRect[1].x + 41, boss.bossRect[1].y + 50);
 			esq.esqVelY[1] = ATAQUEVEL - 2;
 			esq.esqVelX[1] = ATAQUEVEL - 2;
 			esq.esqHasBeenCreated[1] = 1;
@@ -110,13 +101,10 @@ void esqAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			lifestruct.lifes = 3;
 			esq.counter[0] = 50;
 			esq.counter[1] = 50;
-			boss.bossRect[1].w = 0;
-			boss.bossRect[1].h = 0;
+			ValorRects(&boss.bossRect[1], 0, 0, 0, 0);
 			boss.hasSpawned[1] = 1;
-			esq.esqRect[0].w = 0;
-			esq.esqRect[1].w = 0;
-			esq.esqRect[0].h = 0;
-			esq.esqRect[0].h = 0;
+			ValorRects(&esq.esqRect[0], 0, 0, 0, 0);
+			ValorRects(&esq.esqRect[1], 0, 0, 0, 0);
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

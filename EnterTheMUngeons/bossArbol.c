@@ -1,9 +1,6 @@
 #include "Functions.h"
 void bossArbolCreation() {
-	boss.bossRect[3].h = 100;
-	boss.bossRect[3].w = 100;
-	boss.bossRect[3].x = WINDOW_WIDTH/2- 50;
-	boss.bossRect[3].y = WINDOW_HEIGHT/2-50;
+	ValorRects(&boss.bossRect[3], 100, 100, WINDOW_WIDTH / 2 - 50, WINDOW_HEIGHT / 2 - 50);
 	boss.hasSpawned[3] = 0;
 	boss.healthPoints[3] = LAVAHP * 2;
 	arbol.counter[0] = 0;
@@ -18,10 +15,7 @@ void bossArbolCreation() {
 void arbolAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 	if (EnemyV[0].FPSCounter > 50) {
 		if (arbol.arbolHasBeenCreated[0] == 0 && arbol.counter[0] == 0) {
-			arbol.arbolRect[0].h = 26;
-			arbol.arbolRect[0].w = 26;
-			arbol.arbolRect[0].x = boss.bossRect[3].x;
-			arbol.arbolRect[0].y = boss.bossRect[3].y + 70;
+			ValorRects(&arbol.arbolRect[0], 26,26, boss.bossRect[3].x, boss.bossRect[3].y + 70);
 			arbol.arbolVelY[0] = ATAQUEVEL - 4;
 			arbol.arbolVelX[0] = ATAQUEVEL - 4;
 			arbol.arbolHasBeenCreated[0] = 1;
@@ -30,10 +24,7 @@ void arbolAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			arbol.distance = (float)sqrt(arbol.deltax*arbol.deltax + arbol.deltay * arbol.deltay);
 		}
 		if (arbol.arbolHasBeenCreated[1] == 0 && arbol.counter[1] == 0) {
-			arbol.arbolRect[1].h = 26;
-			arbol.arbolRect[1].w = 26;
-			arbol.arbolRect[1].x = boss.bossRect[3].x + 70;
-			arbol.arbolRect[1].y = boss.bossRect[3].y + 55;
+			ValorRects(&arbol.arbolRect[1], 26, 26, boss.bossRect[3].x+70, boss.bossRect[3].y + 55);
 			arbol.arbolVelY[1] = ATAQUEVEL - 4;
 			arbol.arbolVelX[1] = ATAQUEVEL - 4;
 			arbol.arbolHasBeenCreated[1] = 1;
@@ -102,13 +93,10 @@ void arbolAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			lifestruct.score += 1000;
 			arbol.counter[0] = 50;
 			arbol.counter[1] = 50;
-			boss.bossRect[3].w = 0;
-			boss.bossRect[3].h = 0;
+			ValorRects(&boss.bossRect[3], 0, 0, 0, 0);
 			boss.hasSpawned[3] = 1;
-			arbol.arbolRect[0].w = 0;
-			arbol.arbolRect[1].w = 0;
-			arbol.arbolRect[0].h = 0;
-			arbol.arbolRect[0].h = 0;
+			ValorRects(&arbol.arbolRect[0], 0, 0, 0, 0);
+			ValorRects(&arbol.arbolRect[1], 0, 0, 0, 0);
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

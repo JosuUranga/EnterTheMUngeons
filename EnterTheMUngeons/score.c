@@ -61,18 +61,9 @@ void ScoreRefresh(void) {
 					sprintf(lifestruct.str3, "Puntuazio finala: %d", finalscore);
 					break;
 				}
-				lifestruct.Message_rect[0].x = 275;
-				lifestruct.Message_rect[0].y = 150;
-				lifestruct.Message_rect[0].w = 120;
-				lifestruct.Message_rect[0].h = 40;
-				lifestruct.Message_rect[1].x = 250;
-				lifestruct.Message_rect[1].y = 190;
-				lifestruct.Message_rect[1].w = 175;
-				lifestruct.Message_rect[1].h = 40;
-				lifestruct.Message_rect[2].x = 240;
-				lifestruct.Message_rect[2].y = 235;
-				lifestruct.Message_rect[2].w = 200;
-				lifestruct.Message_rect[2].h = 40;
+				ValorRects(&lifestruct.Message_rect[0], 120, 40, 275, 150);
+				ValorRects(&lifestruct.Message_rect[1], 175, 40, 250, 190);
+				ValorRects(&lifestruct.Message_rect[2], 200, 40, 240, 235);
 				lifestruct.surfaceMessage[0] = TTF_RenderText_Solid(lifestruct.Font, lifestruct.str, Color);
 				lifestruct.Message[0] = SDL_CreateTextureFromSurface(levelmanagerstruct.rend, lifestruct.surfaceMessage[0]);
 				lifestruct.surfaceMessage[1] = TTF_RenderText_Solid(lifestruct.Font, lifestruct.str2, Color);

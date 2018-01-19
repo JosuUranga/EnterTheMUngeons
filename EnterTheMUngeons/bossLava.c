@@ -14,10 +14,7 @@ void lavaBoss(void) {
 }
 
 void lavaBossCreation(void) {
-	boss.bossRect[0].h = 100;
-	boss.bossRect[0].w = 100;
-	boss.bossRect[0].x = 50;
-	boss.bossRect[0].y = 50;
+	ValorRects(&boss.bossRect[0], 100, 100, 50,50);
 	boss.bossVelX[0] = LAVABOSSVEL;
 	boss.hasSpawned[0] = 0;
 	boss.healthPoints[0] = LAVAHP;
@@ -34,19 +31,13 @@ void lavaBossCreation(void) {
 void lavaAtakeakSortu(void) {
 	if (EnemyV[0].FPSCounter > 50) {
 		if (lava.lavaHasBeenCreated[0] == 0 && lava.counter[0] == 0) {
-			lava.lavaRect[0].h = 26;
-			lava.lavaRect[0].w = 26;
-			lava.lavaRect[0].x = boss.bossRect[0].x + 50;
-			lava.lavaRect[0].y = boss.bossRect[0].y + 80;
+			ValorRects(&lava.lavaRect[0], 26,26, boss.bossRect[0].x + 50 , boss.bossRect[0].y + 80);
 			lava.lavaVelY[0] = ATAQUEVEL;
 			lava.lavaHasBeenCreated[0] = 1;
 
 		}
 		if (lava.lavaHasBeenCreated[1] == 0 && lava.counter[1] == 0) {
-			lava.lavaRect[1].h = 26;
-			lava.lavaRect[1].w = 26;
-			lava.lavaRect[1].x = boss.bossRect[0].x + 50;
-			lava.lavaRect[1].y = boss.bossRect[0].y + 80;
+			ValorRects(&lava.lavaRect[1], 26, 26, boss.bossRect[0].x + 50, boss.bossRect[0].y + 80);
 			lava.lavaVelY[1] = ATAQUEVEL;
 			lava.lavaHasBeenCreated[1] = 1;
 
@@ -102,13 +93,10 @@ void lavaAtakeakMugitu(void) {
 			lifestruct.lifes = 3;
 			lava.counter[0] = 50;
 			lava.counter[1] = 50;
-			boss.bossRect[0].w = 0;
-			boss.bossRect[0].h = 0;
+			ValorRects(&boss.bossRect[0], 0, 0, 0, 0);
 			boss.hasSpawned[0] = 1;
-			lava.lavaRect[0].w = 0;
-			lava.lavaRect[1].w = 0;
-			lava.lavaRect[0].h = 0;
-			lava.lavaRect[0].h = 0;
+			ValorRects(&lava.lavaRect[0], 0, 0, 0, 0);
+			ValorRects(&lava.lavaRect[1], 0, 0, 0, 0);
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

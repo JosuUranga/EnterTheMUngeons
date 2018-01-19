@@ -1,9 +1,6 @@
 #include "Functions.h"
 void bossNieveCreation() {
-	boss.bossRect[2].h = 100;
-	boss.bossRect[2].w = 82;
-	boss.bossRect[2].x = 520;
-	boss.bossRect[2].y = 50;
+	ValorRects(&boss.bossRect[2], 82, 100, 520, 50);
 	boss.bossVelX[2] = 0;
 	boss.bossVelY[2] = (NIEVEBOSSVEL);
 	boss.hasSpawned[2] = 0;
@@ -44,10 +41,7 @@ void nieveBoss() {
 void nieveAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 	if (EnemyV[0].FPSCounter > 50) {
 		if (nieve.nieveHasBeenCreated[0] == 0 && nieve.counter[0] == 0) {
-			nieve.nieveRect[0].h = 26;
-			nieve.nieveRect[0].w = 26;
-			nieve.nieveRect[0].x = boss.bossRect[2].x + 41;
-			nieve.nieveRect[0].y = boss.bossRect[2].y + 50;
+			ValorRects(&nieve.nieveRect[0], 26, 26, boss.bossRect[2].x + 41, boss.bossRect[2].y + 50);
 			nieve.nieveVelY[0] = ATAQUEVEL - 4;
 			nieve.nieveVelX[0] = ATAQUEVEL - 4;
 			nieve.nieveHasBeenCreated[0] = 1;
@@ -56,10 +50,7 @@ void nieveAtakeakSortu(SDL_Rect player, SDL_Rect bala) {
 			nieve.distance[0] = (float)sqrt(nieve.deltax[0] *nieve.deltax[0] + nieve.deltay[0] * nieve.deltay[0]);
 		}
 		if (nieve.nieveHasBeenCreated[1] == 0 && nieve.counter[1] == 0) {
-			nieve.nieveRect[1].h = 26;
-			nieve.nieveRect[1].w = 26;
-			nieve.nieveRect[1].x = boss.bossRect[2].x + 41;
-			nieve.nieveRect[1].y = boss.bossRect[2].y + 50;
+			ValorRects(&nieve.nieveRect[1], 26, 26, boss.bossRect[2].x + 41, boss.bossRect[2].y + 50);
 			nieve.nieveVelY[1] = ATAQUEVEL - 4;
 			nieve.nieveVelX[1] = ATAQUEVEL - 4;
 			nieve.nieveHasBeenCreated[1] = 1;
@@ -126,13 +117,10 @@ void nieveAtakeakMugitu(SDL_Rect dest, SDL_Rect bala) {
 			lifestruct.score += 1000;
 			nieve.counter[0] = 50;
 			nieve.counter[1] = 50;
-			boss.bossRect[2].w = 0;
-			boss.bossRect[2].h = 0;
+			ValorRects(&boss.bossRect[2], 0, 0, 0, 0);
 			boss.hasSpawned[2] = 1;
-			nieve.nieveRect[0].w = 0;
-			nieve.nieveRect[1].w = 0;
-			nieve.nieveRect[0].h = 0;
-			nieve.nieveRect[0].h = 0;
+			ValorRects(&nieve.nieveRect[0], 0, 0, 0, 0);
+			ValorRects(&nieve.nieveRect[1], 0, 0, 0, 0);
 			if (boss.bossesKilled == 4) lifestruct.lifes = 5;
 		}
 	}

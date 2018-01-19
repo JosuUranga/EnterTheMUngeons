@@ -2,11 +2,7 @@
 
 void life(void) {
 
-	
-	lifestruct.lifeRect.h = 40;
-	lifestruct.lifeRect.w = 146;
-	lifestruct.lifeRect.x = 0;
-	lifestruct.lifeRect.y = 0;
+	ValorRects(&lifestruct.lifeRect, 146, 40, 0, 0);
 	if (enemySpawn.enemyController[levelmanagerstruct.level]) {
 		for (int i = 0; i <= MAXENEMY; i++)
 		{
