@@ -7,15 +7,15 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\weapon.c(28): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   soinua.c
   score.c
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(32): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(32): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(32): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(80): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(80): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(82): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(82): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(84): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(84): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(30): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(30): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(30): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(77): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(77): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(79): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(79): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(81): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\score.c(81): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
   restart.c
   playerShooting.c
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\playershooting.c(23): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
@@ -36,14 +36,20 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(40): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(43): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(43): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(50): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(50): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(55): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(55): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(53): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(53): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(56): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(56): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(105): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(108): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(59): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(59): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(62): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(62): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(70): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(70): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(71): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(71): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(120): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\menu.c(123): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
   life.c
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\life.c(31): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\life.c(31): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
@@ -59,148 +65,111 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\life.c(46): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\life.c(46): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   levelManager.c
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(25): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(22): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(22): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(22): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(25): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(25): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(28): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(28): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(31): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(31): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(34): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(34): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(41): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(41): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(49): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(53): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(57): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(67): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(67): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(68): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(69): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(79): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(79): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(80): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(81): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(38): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(38): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(46): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(46): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(51): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(51): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(56): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(56): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(62): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(62): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(80): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(80): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(82): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(82): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(85): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(85): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(91): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(91): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(92): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(93): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(104): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(104): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(105): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(106): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(131): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(131): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(133): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(133): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(137): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(137): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(138): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(139): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(154): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(154): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(155): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(156): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(181): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(181): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(183): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(183): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(188): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(188): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(189): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(190): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(107): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(107): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(109): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(109): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(112): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(112): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(118): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(118): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(136): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(136): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(138): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(138): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(141): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(141): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(147): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(147): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(163): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(163): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(165): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(165): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(168): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(168): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(174): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(174): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(191): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(191): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(193): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(193): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(196): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(196): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(201): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(201): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(202): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(203): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(232): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(232): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(234): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(234): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(238): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(238): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(239): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(240): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(254): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(254): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(255): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(256): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(281): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(281): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(283): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(283): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(287): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(287): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(288): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(289): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(303): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(303): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(304): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(305): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(330): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(330): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(332): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(332): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(336): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(336): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(337): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(338): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(348): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(348): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(349): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(350): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(371): warning C4087: 'lavaAtakeakSortu': se ha declarado con la lista de parámetros 'void'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(376): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(392): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(392): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(394): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(394): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(398): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(398): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(399): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(400): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(423): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(438): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(438): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(440): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(440): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(444): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(444): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(445): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(446): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(469): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(469): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(471): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(471): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(475): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(475): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(476): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(477): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(487): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(487): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(488): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(489): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(513): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(529): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(529): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(531): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(531): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(535): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(535): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(536): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(537): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(557): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(557): warning C4024: 'esqAtakeakSortu': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(562): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(578): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(578): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(580): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(580): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(584): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(584): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(585): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(586): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(598): warning C4098: 'levelManager': función 'void' que devuelve un valor
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(215): warning C4087: 'lavaAtakeakSortu': se ha declarado con la lista de parámetros 'void'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(217): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(225): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(225): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(227): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(227): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(230): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(230): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(244): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(253): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(253): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(255): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(255): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(258): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(258): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(275): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(275): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(277): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(277): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(280): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(280): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(285): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(285): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(300): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(310): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(310): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(312): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(312): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(315): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(315): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(329): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(329): warning C4024: 'esqAtakeakSortu': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(331): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(341): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(341): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(343): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(343): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(346): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(346): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(355): warning C4098: 'levelManager': función 'void' que devuelve un valor
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(366): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(367): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(375): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(376): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(384): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\levelmanager.c(385): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
   gameOver.c
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(7): warning C4013: 'TakeRenderer' sin definir; se supone que extern devuelve como resultado int
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(7): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
@@ -212,21 +181,20 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(16): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(16): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   finalBoss.c
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(23): warning C4013: 'time' sin definir; se supone que extern devuelve como resultado int
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(90): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(91): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(92): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(102): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(103): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(104): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(120): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(121): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(137): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(138): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(196): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(197): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(200): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(201): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(25): warning C4013: 'time' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(81): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(82): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(83): warning C4244: 'función': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(98): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(99): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(100): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(110): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(111): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(112): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(128): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(129): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(145): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(146): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(204): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(205): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(208): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
@@ -239,9 +207,13 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(221): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(224): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(225): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(243): warning C4305: '-=': truncamiento de 'double' a 'float'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(244): warning C4305: '-=': truncamiento de 'double' a 'float'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(245): warning C4305: '-=': truncamiento de 'double' a 'float'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(228): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(229): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(232): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(233): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(251): warning C4305: '-=': truncamiento de 'double' a 'float'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(252): warning C4305: '-=': truncamiento de 'double' a 'float'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\finalboss.c(253): warning C4305: '-=': truncamiento de 'double' a 'float'
   enemy.c
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\enemy.c(32): warning C4013: 'time' sin definir; se supone que extern devuelve como resultado int
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\enemy.c(93): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
@@ -351,20 +323,20 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\youwin.c(16): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\youwin.c(16): warning C4024: 'SDL_RenderCopy': tipos distintos para el parámetro formal y el parámetro real 1
   Main.c
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(35): warning C4013: 'menuSprites' sin definir; se supone que extern devuelve como resultado int
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(53): warning C4047: 'función': 'ProtaBullet *' es distinto en los niveles de direccionamiento indirecto de 'ProtaBullet (*)[1]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(53): warning C4024: 'AllyBulletCreation': tipos distintos para el parámetro formal y el parámetro real 3
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(54): warning C4047: 'función': 'ProtaBullet *' es distinto en los niveles de direccionamiento indirecto de 'ProtaBullet (*)[1]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(54): warning C4024: 'MoveAllyBullet': tipos distintos para el parámetro formal y el parámetro real 2
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(59): warning C4047: 'función': 'EnemyVe *' es distinto en los niveles de direccionamiento indirecto de 'EnemyVe (*)[5]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(59): warning C4024: 'Enemydead': tipos distintos para el parámetro formal y el parámetro real 2
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(59): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(59): warning C4024: 'Enemydead': tipos distintos para el parámetro formal y el parámetro real 3
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(74): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(74): warning C4024: 'MoveEnemyBullet': tipos distintos para el parámetro formal y el parámetro real 4
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(99): warning C4013: 'weaponSelector' sin definir; se supone que extern devuelve como resultado int
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(118): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(118): warning C4024: 'life': tipos distintos para el parámetro formal y el parámetro real 2
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(40): warning C4013: 'menuSprites' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(57): warning C4047: 'función': 'ProtaBullet *' es distinto en los niveles de direccionamiento indirecto de 'ProtaBullet (*)[1]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(57): warning C4024: 'AllyBulletCreation': tipos distintos para el parámetro formal y el parámetro real 3
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(58): warning C4047: 'función': 'ProtaBullet *' es distinto en los niveles de direccionamiento indirecto de 'ProtaBullet (*)[1]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(58): warning C4024: 'MoveAllyBullet': tipos distintos para el parámetro formal y el parámetro real 2
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(63): warning C4047: 'función': 'EnemyVe *' es distinto en los niveles de direccionamiento indirecto de 'EnemyVe (*)[5]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(63): warning C4024: 'Enemydead': tipos distintos para el parámetro formal y el parámetro real 2
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(63): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(63): warning C4024: 'Enemydead': tipos distintos para el parámetro formal y el parámetro real 3
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(78): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(78): warning C4024: 'MoveEnemyBullet': tipos distintos para el parámetro formal y el parámetro real 4
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(103): warning C4013: 'weaponSelector' sin definir; se supone que extern devuelve como resultado int
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(122): warning C4047: 'función': 'SDL_Rect *' es distinto en los niveles de direccionamiento indirecto de 'SDL_Rect (*)[5]'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\main.c(122): warning C4024: 'life': tipos distintos para el parámetro formal y el parámetro real 2
   Generando código...
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\gameover.c(61): warning C4715: 'WinDieBotoiak': no todas las rutas de acceso de control devuelven un valor
   Compilando...
@@ -382,94 +354,90 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(48): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(50): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(50): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(58): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(58): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(59): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(59): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(60): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(60): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(61): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(61): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(62): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(62): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(63): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(63): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(53): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(53): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(56): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(56): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(66): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(66): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(67): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(67): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(68): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(68): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(69): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(69): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(70): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(70): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(72): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(72): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(71): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(71): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(74): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(74): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(76): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(76): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(78): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(78): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(80): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(80): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(89): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(89): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(82): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(82): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(84): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(84): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(88): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(88): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(97): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(97): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(98): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(98): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(99): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(99): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(102): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(102): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(104): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(104): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(108): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(108): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(105): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(105): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(106): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(106): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(107): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(107): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(110): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(110): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(115): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(115): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(112): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(112): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(116): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(116): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(118): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(118): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(121): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(121): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(125): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(125): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(123): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(123): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(126): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(126): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(129): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(129): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(131): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(131): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(133): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(133): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(137): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(137): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(139): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(139): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(143): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(143): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(145): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(145): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(141): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(141): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(147): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(147): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(151): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(151): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(155): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(155): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(157): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(157): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(153): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(153): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(159): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(159): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(163): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(163): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(167): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(167): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(169): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(169): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(165): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(165): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(171): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(171): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(175): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(175): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(177): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(177): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(179): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(179): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(182): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(182): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(184): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(184): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(186): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(186): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(188): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(188): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(183): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(183): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(185): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(185): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(187): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(187): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(190): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(190): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(192): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
@@ -478,50 +446,58 @@ c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(194): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(196): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(196): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(209): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(209): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(210): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(210): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(211): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(211): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(223): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(223): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(224): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(224): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(225): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(225): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(226): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(226): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(227): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(227): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(228): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(228): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(229): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(229): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(230): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(230): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(198): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(198): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(200): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(200): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(202): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(202): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(204): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(204): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(217): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(217): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(218): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(218): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(219): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(219): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(231): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(231): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(232): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(232): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(243): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(243): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(244): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(244): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(245): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(245): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(246): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(246): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(247): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(247): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(248): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(248): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(249): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(249): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(250): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
-c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(250): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(233): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(233): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(234): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(234): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(235): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(235): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(236): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(236): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(237): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(237): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(238): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(238): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(239): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(239): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(240): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(240): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(251): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(251): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(252): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(252): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(253): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(253): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(254): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(254): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(255): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(255): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(256): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(256): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(257): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(257): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(258): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(258): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(259): warning C4047: 'función': 'SDL_Renderer *' es distinto en los niveles de direccionamiento indirecto de 'int'
+c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initsurfandtex.c(259): warning C4024: 'SDL_CreateTextureFromSurface': tipos distintos para el parámetro formal y el parámetro real 1
   InitStruct.c
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initstruct.c(66): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
 c:\users\usuario\desktop\prog1\prog1\pbl\main\enterthemungeons\enterthemungeons\initstruct.c(67): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
